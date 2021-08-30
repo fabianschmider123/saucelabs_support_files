@@ -1,0 +1,400 @@
+Execution of 1 workers started at 2021-08-30T10:02:33.959Z
+
+2021-08-30T10:02:33.961Z DEBUG @wdio/utils:initialiseServices: initialise service "sauce" as NPM package
+2021-08-30T10:02:34.229Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+2021-08-30T10:02:34.401Z INFO @wdio/cli:launcher: Run onPrepare hook
+2021-08-30T10:02:34.402Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 1ms
+2021-08-30T10:02:34.403Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-08-30T10:02:34.404Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2021-08-30T10:02:34.405Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.chrome.js,--spec,ERROR.js
+[0-0] 2021-08-30T10:02:35.883Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2021-08-30T10:02:35.889Z DEBUG @wdio/config:ConfigParser: No compiler found, continue without compiling files
+[0-0] 2021-08-30T10:02:35.913Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\1_Login.js
+[0-0] 2021-08-30T10:02:35.913Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\2_Search.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\3_AddToCart.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\4_AddToWishlist.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\5_AddToQuote.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\6_Configurator.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\7_AppBased.js
+[0-0] 2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\8_Checkout.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\9_CheckSites.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\ERROR.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\PC\UICheck.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\1_Login_Phone.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\2_Search_Phone.js
+2021-08-30T10:02:35.914Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\3_AddToCart_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\4_AddToWishlist_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\5_AddToQuote_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\6_Configurator_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\8_Checkout_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Phone\UICheck_Phone.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\1_Login_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\2_Search_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\3_AddToCart_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\4_AddToWishlist_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\5_AddToQuote_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\6_Configurator_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\8_Checkout_Tablet.js
+2021-08-30T10:02:35.915Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  C:\Webdriver\test\Tablet\UICheck_Tablet.js
+[0-0] 2021-08-30T10:02:35.916Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2021-08-30T10:02:35.920Z DEBUG @wdio/utils:initialiseServices: initialise service "sauce" as NPM package
+[0-0] 2021-08-30T10:02:36.103Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+[0-0] 2021-08-30T10:02:36.117Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+[0-0] 2021-08-30T10:02:36.241Z DEBUG @wdio/sync: Finished to run "beforeSession" hook in 0ms
+[0-0] RUNNING in chrome - C:\Webdriver\test\PC\ERROR.js
+[0-0] 2021-08-30T10:02:36.422Z DEBUG @wdio/local-runner:utils: init remote session
+2021-08-30T10:02:36.423Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2021-08-30T10:02:36.424Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session
+[0-0] 2021-08-30T10:02:36.424Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      browserVersion: 'latest',
+      platformName: 'Windows 10',
+      acceptInsecureCerts: true,
+      'sauce:options': {}
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': {}
+  }
+}
+[0-0] 2021-08-30T10:02:41.530Z INFO wdio-image-comparison-service: Adding commands to global browser
+[0-0] 2021-08-30T10:02:41.530Z DEBUG @wdio/sync: Finished to run "before" hook in 0ms
+[0-0] DEPRECATION: An asynchronous before/it/after function took a done callback but also returned a promise. This is not supported and will stop working in the future. Either remove the done callback (recommended) or change the function to not return a promise.
+[0-0] 2021-08-30T10:02:41.534Z DEBUG @wdio/sync: Finished to run "beforeSuite" hook in 0ms
+[0-0] 2021-08-30T10:02:41.537Z INFO webdriver: COMMAND executeScript("sauce:job-name=Fix error", <object>)
+[0-0] 2021-08-30T10:02:41.537Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:41.537Z INFO webdriver: DATA { script: 'sauce:job-name=Fix error', args: [] }
+[0-0] 2021-08-30T10:02:41.795Z INFO webdriver: RESULT 
+[0-0] 2021-08-30T10:02:41.795Z INFO webdriver: COMMAND executeScript("sauce:context=Fix error checkScreen", <object>)
+[0-0] 2021-08-30T10:02:41.796Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:41.796Z INFO webdriver: DATA { script: 'sauce:context=Fix error checkScreen', args: [] }
+[0-0] 2021-08-30T10:02:42.146Z INFO webdriver: RESULT 
+[0-0] 2021-08-30T10:02:42.147Z DEBUG @wdio/sync: Finished to run "beforeTest" hook in 611ms
+[0-0] 2021-08-30T10:02:42.147Z INFO webdriver: COMMAND navigateTo("https://www.sick.com/de/en")
+[0-0] 2021-08-30T10:02:42.147Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/url
+2021-08-30T10:02:42.147Z INFO webdriver: DATA { url: 'https://www.sick.com/de/en' }
+[0-0] 2021-08-30T10:02:48.637Z INFO webdriver: COMMAND findElement("css selector", "[id="gdpr_modal_button_consent"]")
+[0-0] 2021-08-30T10:02:48.637Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/element
+2021-08-30T10:02:48.637Z INFO webdriver: DATA { using: 'css selector', value: '[id="gdpr_modal_button_consent"]' }
+[0-0] 2021-08-30T10:02:48.940Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5132df72-5971-477c-a6c6-c8183661b7ff'
+}
+[0-0] ed83af3f103541f4a4ae984c2944123d
+[0-0] {
+  'goog:chromeOptions': { debuggerAddress: 'localhost:62588' },
+  browserVersion: '92.0.4515.107',
+  timeouts: { pageLoad: 300000, implicit: 0, script: 30000 },
+  strictFileInteractability: false,
+  acceptInsecureCerts: true,
+  'webauthn:virtualAuthenticators': true,
+  networkConnectionEnabled: false,
+  chrome: {
+    chromedriverVersion: '92.0.4515.43 (8c61b7e2989f2990d42f859cac71319137787cce-refs/branch-heads/4515@{#306})',
+    userDataDir: 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\scoped_dir1424_1488852643'
+  },
+  browserName: 'chrome',
+  setWindowRect: true,
+  proxy: {},
+  pageLoadStrategy: 'normal',
+  'webauthn:extension:largeBlob': true,
+  platformName: 'windows',
+  unhandledPromptBehavior: 'dismiss and notify',
+  'webauthn:extension:credBlob': true
+}
+[0-0] {
+  protocol: 'https',
+  hostname: 'ondemand.us-west-1.saucelabs.com',
+  port: 443,
+  path: '/wd/hub',
+  user: 'schmifa1',
+  key: 'c70e9b1c-eb25-4b65-881a-4264c4283305',
+  capabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': {}
+  },
+  logLevel: 'debug',
+  connectionRetryTimeout: 60000,
+  connectionRetryCount: 3,
+  logLevels: {},
+  transformRequest: [Function: default],
+  transformResponse: [Function: default],
+  strictSSL: true,
+  requestedCapabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': {}
+  },
+  specs: [ 'C:\\Webdriver\\test\\PC\\ERROR.js' ],
+  exclude: [],
+  suites: {},
+  baseUrl: 'http://localhost',
+  bail: 0,
+  waitforInterval: 500,
+  waitforTimeout: 10000,
+  framework: 'jasmine',
+  reporters: [ 'spec' ],
+  services: [ [ 'sauce' ], [ 'image-comparison', [Object] ] ],
+  execArgv: [],
+  maxInstances: 2,
+  maxInstancesPerCapability: 100,
+  filesToWatch: [],
+  onPrepare: [],
+  onWorkerStart: [],
+  before: [ [Function: bound before], [Function: bound before] ],
+  beforeSession: [ [Function: bound beforeSession] ],
+  beforeSuite: [ [Function: bound beforeSuite] ],
+  beforeHook: [],
+  beforeTest: [ [Function: bound beforeTest] ],
+  beforeCommand: [],
+  afterCommand: [],
+  afterTest: [ [Function: bound afterTest] ],
+  afterHook: [ [Function: bound afterHook] ],
+  afterSuite: [ [Function: bound afterSuite] ],
+  afterSession: [],
+  after: [ [Function: bound after] AsyncFunction ],
+  onComplete: [],
+  onReload: [ [Function: bound onReload] ],
+  automationProtocol: 'webdriver'
+}
+2021-08-30T10:02:48.946Z INFO webdriver: COMMAND elementClick("5132df72-5971-477c-a6c6-c8183661b7ff")
+2021-08-30T10:02:48.946Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/element/5132df72-5971-477c-a6c6-c8183661b7ff/click
+[0-0] 2021-08-30T10:02:49.708Z INFO webdriver: COMMAND saveScreen("SaveStartPage", <object>)
+[0-0] 2021-08-30T10:02:49.710Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:49.710Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+[0-0] 2021-08-30T10:02:49.710Z INFO webdriver: DATA {
+  script: 'return (function hideScrollBars(hide) {\r\n' +
+    '    try {\r\n' +
+    '        if (hide) {\r\n' +
+    "            document.body.style.overflow = 'hidden';\r\n" +
+    '        }\r\n' +
+    '        else {\r\n' +
+    "            document.body.style.overflow = '';\r\n" +
+    '        }\r\n' +
+    '    }\r\n' +
+    '    catch (e) {\r\n' +
+    '    }\r\n' +
+    '}).apply(null, arguments)',
+  args: [ true ]
+}
+[0-0] 2021-08-30T10:02:50.006Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:50.007Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+[0-0] 2021-08-30T10:02:50.007Z INFO webdriver: DATA {
+  script: 'return (function getScreenDimensions() {\r\n' +
+    '    var body = document.body;\r\n' +
+    '    var html = document.documentElement;\r\n' +
+    '    var bodyDimensions = {\r\n' +
+    '        scrollHeight: body == null ? 0 : body.scrollHeight,\r\n' +
+    '        offsetHeight: body == null ? 0 : body.offsetHeight\r\n' +
+    '    };\r\n' +
+    '    var htmlDimensions = {\r\n' +
+    '        clientHeight: html == null ? 0 : html.clientHeight,\r\n' +
+    '        clientWidth: html == null ? 0 : html.clientWidth,\r\n' +
+    '        scrollHeight: html == null ? 0 : html.scrollHeight,\r\n' +
+    '        scrollWidth: html == null ? 0 : html.scrollWidth,\r\n' +
+    '        offsetHeight: html == null ? 0 : html.offsetHeight\r\n' +
+    '    };\r\n' +
+    '    var windowDimensions = {\r\n' +
+    '        innerWidth: window.innerWidth,\r\n' +
+    '        innerHeight: window.innerHeight,\r\n' +
+    '        outerHeight: window.outerHeight === 0 ? htmlDimensions.clientHeight : window.outerHeight,\r\n' +
+    '        outerWidth: window.outerWidth === 0 ? htmlDimensions.clientWidth : window.outerWidth,\r\n' +
+    '        devicePixelRatio: window.devicePixelRatio,\r\n' +
+    '        screenWidth: window.screen.width,\r\n' +
+    '        screenHeight: window.screen.height,\r\n' +
+    '    };\r\n' +
+    '    return {\r\n' +
+    '        dimensions: {\r\n' +
+    '            body: bodyDimensions,\r\n' +
+    '            html: htmlDimensions,\r\n' +
+    '            window: windowDimensions\r\n' +
+    '        }\r\n' +
+    '    };\r\n' +
+    '}).apply(null, arguments)',
+  args: []
+}
+[0-0] 2021-08-30T10:02:50.275Z INFO webdriver: RESULT {
+  dimensions: {
+    body: { offsetHeight: 4395, scrollHeight: 4395 },
+    window: {
+      devicePixelRatio: 1,
+      outerWidth: 1024,
+      innerWidth: 1024,
+      outerHeight: 768,
+      screenHeight: 768,
+      innerHeight: 651,
+      screenWidth: 1024
+    },
+    html: {
+      clientWidth: 1024,
+      offsetHeight: 4395,
+      scrollWidth: 1024,
+      clientHeight: 651,
+      scrollHeight: 4395
+    }
+  }
+}
+[0-0] 2021-08-30T10:02:50.276Z INFO webdriver: COMMAND takeScreenshot()
+2021-08-30T10:02:50.276Z INFO webdriver: [GET] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/screenshot
+[0-0] 2021-08-30T10:02:53.529Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABAAAAAKLCAYAAABouvqiAAAAAXNSR0IArs4c6...
+[0-0] 2021-08-30T10:02:53.776Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:53.777Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:53.777Z INFO webdriver: DATA {
+  script: 'return (function hideScrollBars(hide) {\r\n' +
+    '    try {\r\n' +
+    '        if (hide) {\r\n' +
+    "            document.body.style.overflow = 'hidden';\r\n" +
+    '        }\r\n' +
+    '        else {\r\n' +
+    "            document.body.style.overflow = '';\r\n" +
+    '        }\r\n' +
+    '    }\r\n' +
+    '    catch (e) {\r\n' +
+    '    }\r\n' +
+    '}).apply(null, arguments)',
+  args: [ false ]
+}
+[0-0] 2021-08-30T10:02:55.140Z INFO webdriver: RESULT {
+  fileName: 'SaveStartPage--1024x768.png',
+  path: '.tmp\\actual\\desktop_chrome',
+  devicePixelRatio: 1
+}
+[0-0] 2021-08-30T10:02:55.140Z INFO webdriver: COMMAND checkScreen("<Screenshot[base64]>", <object>)
+2021-08-30T10:02:55.141Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:55.141Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:55.141Z INFO webdriver: DATA {
+  script: 'return (function hideScrollBars(hide) {\r\n' +
+    '    try {\r\n' +
+    '        if (hide) {\r\n' +
+    "            document.body.style.overflow = 'hidden';\r\n" +
+    '        }\r\n' +
+    '        else {\r\n' +
+    "            document.body.style.overflow = '';\r\n" +
+    '        }\r\n' +
+    '    }\r\n' +
+    '    catch (e) {\r\n' +
+    '    }\r\n' +
+    '}).apply(null, arguments)',
+  args: [ true ]
+}
+[0-0] 2021-08-30T10:02:55.389Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:55.390Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:55.390Z INFO webdriver: DATA {
+  script: 'return (function getScreenDimensions() {\r\n' +
+    '    var body = document.body;\r\n' +
+    '    var html = document.documentElement;\r\n' +
+    '    var bodyDimensions = {\r\n' +
+    '        scrollHeight: body == null ? 0 : body.scrollHeight,\r\n' +
+    '        offsetHeight: body == null ? 0 : body.offsetHeight\r\n' +
+    '    };\r\n' +
+    '    var htmlDimensions = {\r\n' +
+    '        clientHeight: html == null ? 0 : html.clientHeight,\r\n' +
+    '        clientWidth: html == null ? 0 : html.clientWidth,\r\n' +
+    '        scrollHeight: html == null ? 0 : html.scrollHeight,\r\n' +
+    '        scrollWidth: html == null ? 0 : html.scrollWidth,\r\n' +
+    '        offsetHeight: html == null ? 0 : html.offsetHeight\r\n' +
+    '    };\r\n' +
+    '    var windowDimensions = {\r\n' +
+    '        innerWidth: window.innerWidth,\r\n' +
+    '        innerHeight: window.innerHeight,\r\n' +
+    '        outerHeight: window.outerHeight === 0 ? htmlDimensions.clientHeight : window.outerHeight,\r\n' +
+    '        outerWidth: window.outerWidth === 0 ? htmlDimensions.clientWidth : window.outerWidth,\r\n' +
+    '        devicePixelRatio: window.devicePixelRatio,\r\n' +
+    '        screenWidth: window.screen.width,\r\n' +
+    '        screenHeight: window.screen.height,\r\n' +
+    '    };\r\n' +
+    '    return {\r\n' +
+    '        dimensions: {\r\n' +
+    '            body: bodyDimensions,\r\n' +
+    '            html: htmlDimensions,\r\n' +
+    '            window: windowDimensions\r\n' +
+    '        }\r\n' +
+    '    };\r\n' +
+    '}).apply(null, arguments)',
+  args: []
+}
+[0-0] 2021-08-30T10:02:55.644Z INFO webdriver: RESULT {
+  dimensions: {
+    body: { offsetHeight: 4395, scrollHeight: 4395 },
+    window: {
+      devicePixelRatio: 1,
+      outerWidth: 1024,
+      innerWidth: 1024,
+      outerHeight: 768,
+      screenHeight: 768,
+      innerHeight: 651,
+      screenWidth: 1024
+    },
+    html: {
+      clientWidth: 1024,
+      offsetHeight: 4395,
+      scrollWidth: 1024,
+      clientHeight: 651,
+      scrollHeight: 4395
+    }
+  }
+}
+[0-0] 2021-08-30T10:02:55.644Z INFO webdriver: COMMAND takeScreenshot()
+2021-08-30T10:02:55.644Z INFO webdriver: [GET] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/screenshot
+[0-0] 2021-08-30T10:02:58.272Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABAAAAAKLCAYAAABouvqiAAAAAXNSR0IArs4c6...
+[0-0] 2021-08-30T10:02:58.514Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2021-08-30T10:02:58.514Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d/execute/sync
+2021-08-30T10:02:58.514Z INFO webdriver: DATA {
+  script: 'return (function hideScrollBars(hide) {\r\n' +
+    '    try {\r\n' +
+    '        if (hide) {\r\n' +
+    "            document.body.style.overflow = 'hidden';\r\n" +
+    '        }\r\n' +
+    '        else {\r\n' +
+    "            document.body.style.overflow = '';\r\n" +
+    '        }\r\n' +
+    '    }\r\n' +
+    '    catch (e) {\r\n' +
+    '    }\r\n' +
+    '}).apply(null, arguments)',
+  args: [ false ]
+}
+[0-0] 2021-08-30T10:02:58.864Z INFO webdriver: RESULT 0
+[0-0] 2021-08-30T10:02:58.866Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 0ms
+[0-0] DEPRECATION: An asynchronous before/it/after function took a done callback but also returned a promise. This is not supported and will stop working in the future. Either remove the done callback (recommended) or change the function to not return a promise.
+[0-0] 2021-08-30T10:02:58.873Z DEBUG @wdio/sync: Finished to run "afterSuite" hook in 1ms
+[0-0] 2021-08-30T10:02:58.874Z INFO @wdio/sauce-service: Update job with sessionId ed83af3f103541f4a4ae984c2944123d, status: passing
+[0-0] 2021-08-30T10:02:59.937Z DEBUG @wdio/sync: Finished to run "after" hook in 1063ms
+[0-0] 2021-08-30T10:02:59.937Z INFO webdriver: COMMAND deleteSession()
+2021-08-30T10:02:59.937Z INFO webdriver: [DELETE] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/ed83af3f103541f4a4ae984c2944123d
+[0-0] 2021-08-30T10:03:00.290Z INFO webdriver: RESULT
+2021-08-30T10:03:00.407Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+[0-0] PASSED in chrome - C:\Webdriver\test\PC\ERROR.js
+2021-08-30T10:03:00.408Z INFO @wdio/cli:launcher: Run onComplete hook
+2021-08-30T10:03:00.409Z DEBUG @wdio/cli:utils: Finished to run "onComplete" hook in 0ms
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 92.0.4515.107 windows #0-0] Running: chrome (v92.0.4515.107) on windows
+[chrome 92.0.4515.107 windows #0-0] Session ID: ed83af3f103541f4a4ae984c2944123d
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] » \test\PC\ERROR.js
+[chrome 92.0.4515.107 windows #0-0] Fix error
+[chrome 92.0.4515.107 windows #0-0]    ✓ checkScreen
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] 1 passing (18.7s)
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] Check out job at https://app.saucelabs.com/tests/ed83af3f103541f4a4ae984c2944123d?auth=cd4d30e64d6b2ba0d9dfc9a8c79ebe1e
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:26
+
+2021-08-30T10:03:00.411Z INFO @wdio/local-runner: Shutting down spawned worker
+2021-08-30T10:03:00.662Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2021-08-30T10:03:00.663Z INFO @wdio/local-runner: shutting down

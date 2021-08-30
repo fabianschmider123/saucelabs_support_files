@@ -1,0 +1,1714 @@
+Running with gitlab-runner 13.10.0 (54944146)
+  on gitlab-ci-webx fn6TAMz5
+Resolving secrets
+00:00
+Preparing the "kubernetes" executor
+00:00
+Using Kubernetes namespace: gitlab-ci-webx
+Using Kubernetes executor with image artifactory.sick.com/dockerhub-remote/node:16-buster-slim ...
+Preparing environment
+00:06
+WARNING: Pulling GitLab Runner helper image from Docker Hub. Helper image is migrating to registry.gitlab.com, for more information see https://docs.gitlab.com/runner/configuration/advanced-configuration.html#migrating-helper-image-to-registrygitlabcom
+Waiting for pod gitlab-ci-webx/runner-fn6tamz5-project-1805-concurrent-0htvcg to be running, status is Pending
+Waiting for pod gitlab-ci-webx/runner-fn6tamz5-project-1805-concurrent-0htvcg to be running, status is Pending
+	ContainersNotReady: "containers with unready status: [build helper]"
+	ContainersNotReady: "containers with unready status: [build helper]"
+Running on runner-fn6tamz5-project-1805-concurrent-0htvcg via gitlab-runner-gitlab-runner-74979f587c-cmhwv...
+Getting source from Git repository
+00:05
+Fetching changes with git depth set to 50...
+Initialized empty Git repository in /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/.git/
+Created fresh repository.
+Checking out 119304b4 as master...
+Skipping Git submodules setup
+Restoring cache
+00:00
+Checking cache for default-3...
+No URL provided, cache will not be downloaded from shared cache server. Instead a local version of cache will be extracted. 
+Successfully extracted cache
+Executing "step_script" stage of the job script
+01:23
+$ export
+declare -x CI="true"
+declare -x CI_API_V4_URL="https://gitlab.sick.com/api/v4"
+declare -x CI_BUILDS_DIR="/builds"
+declare -x CI_BUILD_BEFORE_SHA="8ae7ba1a9213f5dd5211cc391a1c16d939ceb442"
+declare -x CI_BUILD_ID="967390"
+declare -x CI_BUILD_NAME="saucelabs"
+declare -x CI_BUILD_REF="119304b4e5b17adab82cb6a5ee7c7885a6bf8606"
+declare -x CI_BUILD_REF_NAME="master"
+declare -x CI_BUILD_REF_SLUG="master"
+declare -x CI_BUILD_STAGE="test"
+declare -x CI_BUILD_TOKEN="[MASKED]"
+declare -x CI_COMMIT_AUTHOR="SICKCN\\schmifa1 <fabian.schmider@sick.de>"
+declare -x CI_COMMIT_BEFORE_SHA="8ae7ba1a9213f5dd5211cc391a1c16d939ceb442"
+declare -x CI_COMMIT_BRANCH="master"
+declare -x CI_COMMIT_DESCRIPTION=""
+declare -x CI_COMMIT_MESSAGE="WEB-898 check, to revert later
+"
+declare -x CI_COMMIT_REF_NAME="master"
+declare -x CI_COMMIT_REF_PROTECTED="true"
+declare -x CI_COMMIT_REF_SLUG="master"
+declare -x CI_COMMIT_SHA="119304b4e5b17adab82cb6a5ee7c7885a6bf8606"
+declare -x CI_COMMIT_SHORT_SHA="119304b4"
+declare -x CI_COMMIT_TIMESTAMP="2021-08-30T12:10:20+02:00"
+declare -x CI_COMMIT_TITLE="WEB-898 check, to revert later"
+declare -x CI_CONCURRENT_ID="0"
+declare -x CI_CONCURRENT_PROJECT_ID="0"
+declare -x CI_CONFIG_PATH=".gitlab-ci.yml"
+declare -x CI_DEFAULT_BRANCH="master"
+declare -x CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX="gitlab.sick.com:443/cd-it/dependency_proxy/containers"
+declare -x CI_DEPENDENCY_PROXY_PASSWORD="[MASKED]"
+declare -x CI_DEPENDENCY_PROXY_SERVER="gitlab.sick.com:443"
+declare -x CI_DEPENDENCY_PROXY_USER="gitlab-ci-token"
+declare -x CI_DISPOSABLE_ENVIRONMENT="true"
+declare -x CI_JOB_ID="967390"
+declare -x CI_JOB_IMAGE="artifactory.sick.com/dockerhub-remote/node:16-buster-slim"
+declare -x CI_JOB_JWT="[MASKED]"
+declare -x CI_JOB_NAME="saucelabs"
+declare -x CI_JOB_STAGE="test"
+declare -x CI_JOB_STARTED_AT="2021-08-30T10:10:31Z"
+declare -x CI_JOB_STATUS="running"
+declare -x CI_JOB_TOKEN="[MASKED]"
+declare -x CI_JOB_URL="https://gitlab.sick.com/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/-/jobs/967390"
+declare -x CI_NODE_TOTAL="1"
+declare -x CI_PAGES_DOMAIN="example.com"
+declare -x CI_PAGES_URL="http://cd-it.example.com/ba-e/projects/web-experience/infrastructure/playground/wdio_tests"
+declare -x CI_PIPELINE_CREATED_AT="2021-08-30T10:10:22Z"
+declare -x CI_PIPELINE_ID="379556"
+declare -x CI_PIPELINE_IID="231"
+declare -x CI_PIPELINE_SOURCE="push"
+declare -x CI_PIPELINE_URL="https://gitlab.sick.com/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/-/pipelines/379556"
+declare -x CI_PROJECT_DIR="/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests"
+declare -x CI_PROJECT_ID="1805"
+declare -x CI_PROJECT_NAME="wdio_tests"
+declare -x CI_PROJECT_NAMESPACE="cd-it/ba-e/projects/web-experience/infrastructure/playground"
+declare -x CI_PROJECT_PATH="cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests"
+declare -x CI_PROJECT_PATH_SLUG="cd-it-ba-e-projects-web-experience-infrastructure-playground-wd"
+declare -x CI_PROJECT_REPOSITORY_LANGUAGES="javascript"
+declare -x CI_PROJECT_ROOT_NAMESPACE="cd-it"
+declare -x CI_PROJECT_TITLE="WDIO_Tests"
+declare -x CI_PROJECT_URL="https://gitlab.sick.com/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests"
+declare -x CI_PROJECT_VISIBILITY="private"
+declare -x CI_REGISTRY_PASSWORD="[MASKED]"
+declare -x CI_REGISTRY_USER="gitlab-ci-token"
+declare -x CI_REPOSITORY_URL="https://gitlab-ci-token:[MASKED]@gitlab.sick.com/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests.git"
+declare -x CI_RUNNER_DESCRIPTION="gitlab-ci-webx"
+declare -x CI_RUNNER_EXECUTABLE_ARCH="linux/amd64"
+declare -x CI_RUNNER_ID="1927"
+declare -x CI_RUNNER_REVISION="54944146"
+declare -x CI_RUNNER_SHORT_TOKEN="fn6TAMz5"
+declare -x CI_RUNNER_TAGS="k8s-webx, k8s"
+declare -x CI_RUNNER_VERSION="13.10.0"
+declare -x CI_SERVER="yes"
+declare -x CI_SERVER_HOST="gitlab.sick.com"
+declare -x CI_SERVER_NAME="GitLab"
+declare -x CI_SERVER_PORT="443"
+declare -x CI_SERVER_PROTOCOL="https"
+declare -x CI_SERVER_REVISION="0bf9b154ab4"
+declare -x CI_SERVER_TLS_CA_FILE="/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests.tmp/CI_SERVER_TLS_CA_FILE"
+declare -x CI_SERVER_URL="https://gitlab.sick.com"
+declare -x CI_SERVER_VERSION="14.1.2-ee"
+declare -x CI_SERVER_VERSION_MAJOR="14"
+declare -x CI_SERVER_VERSION_MINOR="1"
+declare -x CI_SERVER_VERSION_PATCH="2"
+declare -x DOCKER_AUTH_CONFIG="{
+	\"auths\": {
+		\"artifactory.sick.com\": {
+			\"auth\": \"ZGVwbG95MDEud2VieEBzaWNrLmRlOkFLQ3A4aHpEMnZCWUVHYlVxV2lkbjhqVHlTZDZIcTJva3hla3VjUjFIMWc4NEM0NnQ2OENLZWhWZFplY1d2UkxZREVMZXRzNXo=\",
+			\"email\": \"deploy01.webx@sick.de\"
+		}
+	}
+}"
+declare -x FF_CMD_DISABLE_DELAYED_ERROR_LEVEL_EXPANSION="false"
+declare -x FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR="false"
+declare -x FF_ENABLE_BASH_EXIT_CODE_CHECK="false"
+declare -x FF_GITLAB_REGISTRY_HELPER_IMAGE="false"
+declare -x FF_NETWORK_PER_BUILD="false"
+declare -x FF_RESET_HELPER_IMAGE_ENTRYPOINT="true"
+declare -x FF_SHELL_EXECUTOR_USE_LEGACY_PROCESS_KILL="false"
+declare -x FF_SKIP_NOOP_BUILD_STAGES="true"
+declare -x FF_USE_DIRECT_DOWNLOAD="true"
+declare -x FF_USE_FASTZIP="false"
+declare -x FF_USE_GO_CLOUD_WITH_CACHE_ARCHIVER="true"
+declare -x FF_USE_LEGACY_KUBERNETES_EXECUTION_STRATEGY="true"
+declare -x FF_USE_WINDOWS_LEGACY_PROCESS_STRATEGY="true"
+declare -x GITLAB_CI="true"
+declare -x GITLAB_FEATURES="audit_events,blocked_issues,board_iteration_lists,code_owners,code_review_analytics,contribution_analytics,description_diffs,elastic_search,full_codequality_report,group_activity_analytics,group_bulk_edit,group_webhooks,issuable_default_templates,issue_weights,iterations,ldap_group_sync,member_lock,merge_request_approvers,milestone_charts,multiple_issue_assignees,multiple_ldap_servers,multiple_merge_request_assignees,multiple_merge_request_reviewers,project_merge_request_analytics,protected_refs_for_users,push_rules,repository_mirrors,repository_size_limit,resource_access_token,seat_link,scoped_issue_board,usage_quotas,visual_review_app,wip_limits,send_emails_from_admin_area,adjourned_deletion_for_projects_and_groups,admin_audit_log,auditor_user,blocking_merge_requests,board_assignee_lists,board_milestone_lists,ci_cd_projects,ci_secrets_management,cluster_agents,cluster_deployments,code_owner_approval_required,commit_committer_check,compliance_framework,custom_compliance_frameworks,cross_project_pipelines,custom_file_templates,custom_file_templates_for_namespace,custom_project_templates,cycle_analytics_for_groups,cycle_analytics_for_projects,db_load_balancing,default_branch_protection_restriction_in_groups,default_project_deletion_protection,disable_name_update_for_users,email_additional_text,epics,extended_audit_events,external_authorization_service_api_management,feature_flags_related_issues,file_locks,geo,generic_alert_fingerprinting,git_two_factor_enforcement,github_project_service_integration,group_allowed_email_domains,group_coverage_reports,group_forking_protection,group_ip_restriction,group_merge_request_analytics,group_merge_request_approval_settings,group_milestone_project_releases,group_project_templates,group_repository_analytics,group_saml,group_saml_group_sync,group_scoped_ci_variables,group_wikis,incident_sla,incident_metric_upload,ide_schema_config,issues_analytics,jira_issues_integration,ldap_group_sync_filter,merge_pipelines,merge_request_performance_metrics,admin_merge_request_approvers_rules,merge_trains,metrics_reports,multiple_alert_http_integrations,multiple_approval_rules,multiple_group_issue_boards,multiple_iteration_cadences,object_storage,operations_dashboard,package_forwarding,pages_size_limit,productivity_analytics,project_aliases,protected_environments,reject_unsigned_commits,required_ci_templates,scoped_labels,smartcard_auth,swimlanes,type_of_work_analytics,minimal_access_role,unprotection_restrictions,ci_project_subscriptions,incident_timeline_view,oncall_schedules,escalation_policies,export_user_permissions"
+declare -x GITLAB_USER_EMAIL="fabian.schmider@sick.de"
+declare -x GITLAB_USER_ID="77"
+declare -x GITLAB_USER_LOGIN="fschmider"
+declare -x GITLAB_USER_NAME="fschmider"
+declare -x HOME="/root"
+declare -x HOSTNAME="runner-fn6tamz5-project-1805-concurrent-0htvcg"
+declare -x K8S_DOCKERCONFIGJSON="[MASKED]"
+declare -x KUBECONFIG="/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests.tmp/KUBECONFIG"
+declare -x KUBERNETES_PORT="tcp://10.43.0.1:443"
+declare -x KUBERNETES_PORT_443_TCP="tcp://10.43.0.1:443"
+declare -x KUBERNETES_PORT_443_TCP_ADDR="10.43.0.1"
+declare -x KUBERNETES_PORT_443_TCP_PORT="443"
+declare -x KUBERNETES_PORT_443_TCP_PROTO="tcp"
+declare -x KUBERNETES_SERVICE_HOST="10.43.0.1"
+declare -x KUBERNETES_SERVICE_PORT="443"
+declare -x KUBERNETES_SERVICE_PORT_HTTPS="443"
+declare -x NODE_VERSION="16.8.0"
+declare -x OLDPWD="/"
+declare -x PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+declare -x PWD="/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests"
+declare -x REGISTRY_PASSWORD="[MASKED]"
+declare -x REGISTRY_USER="build01.webx@sick.de"
+declare -x SHLVL="1"
+declare -x SI_AD_ACCESS_KEY="[MASKED]"
+declare -x SI_AF_BUILD_USR_NAME="build01.webx@sick.de"
+declare -x SI_AF_BUILD_USR_NAME_WDIO="fabian.schmider@sick.de"
+declare -x SI_AF_BUILD_USR_TOKEN="[MASKED]"
+declare -x SI_AF_BUILD_USR_TOKEN_WDIO="AKCp8ihf8XkS6uqNxzm2kAJmvK4DPmjeppbiCjvffEgXvR9jR5i15VG6v3iANz5fQLKg1LK2G"
+declare -x SI_AF_K8S_DOCKERCONFIGJSON="[MASKED]"
+declare -x SI_AF_URL="artifactory.sick.com"
+declare -x SI_FF_PASSWORD="[MASKED]"
+declare -x SI_GL_BUILD_USR_NAME="build01.webx@sick.de"
+declare -x SI_GL_BUILD_USR_TOKEN="[MASKED]"
+declare -x YARN_VERSION="1.22.5"
+$ chmod -R a+x node_modules
+$ npm install --loglevel verbose
+npm verb cli [
+npm verb cli   '/usr/local/bin/node',
+npm verb cli   '/usr/local/bin/npm',
+npm verb cli   'install',
+npm verb cli   '--loglevel',
+npm verb cli   'verbose'
+npm verb cli ]
+npm info using npm@7.21.0
+npm info using node@v16.8.0
+npm timing npm:load:whichnode Completed in 0ms
+npm timing config:load:defaults Completed in 1ms
+npm timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+npm timing config:load:builtin Completed in 0ms
+npm timing config:load:cli Completed in 1ms
+npm timing config:load:env Completed in 1ms
+npm timing config:load:file:/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/.npmrc Completed in 0ms
+npm timing config:load:project Completed in 0ms
+npm timing config:load:file:/root/.npmrc Completed in 0ms
+npm timing config:load:user Completed in 0ms
+npm timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+npm timing config:load:global Completed in 1ms
+npm timing config:load:validate Completed in 0ms
+npm timing config:load:credentials Completed in 1ms
+npm timing config:load:setEnvs Completed in 0ms
+npm timing config:load Completed in 7ms
+npm timing npm:load:configload Completed in 7ms
+npm timing npm:load:setTitle Completed in 0ms
+npm timing npm:load:setupLog Completed in 1ms
+npm timing config:load:flatten Completed in 2ms
+npm timing npm:load:cleanupLog Completed in 2ms
+npm timing npm:load:configScope Completed in 0ms
+npm timing npm:load:projectScope Completed in 1ms
+npm timing npm:load Completed in 14ms
+npm timing arborist:ctor Completed in 1ms
+npm timing idealTree:init Completed in 415ms
+npm WARN old lockfile 
+npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+npm WARN old lockfile 
+npm WARN old lockfile This is a one-time fix-up, please be patient...
+npm WARN old lockfile 
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcode-frame 656ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhighlight 657ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles 659ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-validator-identifier 663ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/color-convert 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/color-name 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-flag 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/chalk 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/supports-color 59ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@hapi%2fhoek 56ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime-corejs3 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@jest%2ftypes 55ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@hapi%2ftopo 75ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@sideway%2fformula 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@sideway%2faddress 81ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@sideway%2fpinpoint 63ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@szmarczak%2fhttp-timer 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2faria-query 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@sindresorhus%2fis 69ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fcacheable-request 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2feasy-table 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fejs 58ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2ffibers 49ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2ffs-extra 51ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-cache-semantics 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2finquirer 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fistanbul-lib-coverage 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fistanbul-lib-report 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fistanbul-reports 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fjasmine 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fkeyv 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2flodash 63ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2flodash.flattendeep 54ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2flodash.pickby 64ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2flodash.union 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2frecursive-readdir 55ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fpuppeteer 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fnode 97ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fresponselike 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fstack-utils 50ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fstream-buffers 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fyargs 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fwhich 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fthrough 84ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fyargs-parser 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fyauzl 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2flogger 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fconfig 77ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fcli 115ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fprotocols 87ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2frepl 82ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2ftypes 66ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/debug 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2futils 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/chrome-launcher 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/devtools 56ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/devtools-protocol 74ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fs-extra 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ms 59ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/progress 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/puppeteer-core 58ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/rgb2hex 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tar-fs 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mkdirp 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/unbzip2-stream 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/webdriver 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ws 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/webdriverio 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2freporter 66ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2flocal-runner 85ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2frunner 91ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fspec-reporter 69ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fsync 88ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/abbrev 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/agent-base 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-escapes 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/anymatch 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fcucumber 1487ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aproba 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/arch 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/archive-type 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/file-type 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/archiver 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/async 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/archiver-utils 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/readable-stream 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/async-exit-hook 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aria-query 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/asynckit 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/at-least-node 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/atob 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/axios 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/balanced-match 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/base64-js 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bin-version 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bin-check 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cross-spawn 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/execa 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/get-stream 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bin-version-check 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/which 66ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bin-wrapper 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pify 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/binary-extensions 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bl 54ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bluebird 58ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/brace-expansion 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/buffer 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/braces 70ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/buffer-alloc 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/buffer-alloc-unsafe 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/buffer-crc32 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cac 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/buffer-fill 75ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cacheable-lookup 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/camel-case 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cacheable-request 85ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tslib 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/camelcase 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/camelcase-keys 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/capital-case 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/canvas 49ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/change-case 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/caw 49ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/chardet 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/check-more-types 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fjasmine-framework 1638ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@wdio%2fsauce-service 1524ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/chokidar 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/chownr 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cli-cursor 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cli-width 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cliui 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cli-spinners 52ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/clone 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/clone-response 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/code-point-at 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/combined-stream 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/commander 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/compress-commons 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/concat-map 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/config-chain 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/console-control-strings 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/content-disposition 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/constant-case 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/core-js-pure 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/core-util-is 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/crc32-stream 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/crc-32 50ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/css-value 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/css-shorthand-properties 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decode-uri-component 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mimic-response 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress-response 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress-tar 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tar-stream 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress-tarbz2 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress-targz 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/decompress-unzip 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/deep-extend 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/defaults 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/deepmerge 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/defer-to-connect 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/delayed-stream 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/delegates 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/diff-sequences 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/detect-libc 65ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/dot-case 51ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/download 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lowercase-keys 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/got 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/json-buffer 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/keyv 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/normalize-url 53ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/sort-keys 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-cancelable 75ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/duplexer3 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/duplexer 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/easy-table 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ejs 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/edge-paths 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/emoji-regex 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/end-of-stream 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/error-ex 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/esbuild 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/escalade 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/event-stream 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/executable 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/exit-on-epipe 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/expect 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/expect-webdriverio 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ext-list 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/external-editor 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/extract-zip 25ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ext-name 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fd-slicer 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fibers 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/figures 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/filelist 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/filename-reserved-regex 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/filenamify 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fill-range 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/find-up 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/find-versions 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/follow-redirects 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/form-data 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/from2 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/from 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fs-constants 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fsevents 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fs.realpath 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fs-minipass 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/function-bind 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/gauge 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string-width 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/get-caller-file 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/gaze 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/get-port 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/glob 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/get-proxy 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/glob-parent 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/globule 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/graceful-fs 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-ansi 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/responselike 719ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-symbol-support-x 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-to-string-tag-x 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/has-unicode 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/hash.js 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/hosted-git-info 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/http2-wrapper 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/human-signals 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ieee754 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/iconv-lite 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/import-lazy 26ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ignore-walk 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/indent-string 25ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/inflight 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/inherits 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ini 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/inquirer 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/rxjs 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/into-stream 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/grapheme-splitter 399ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-arrayish 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-core-module 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-docker 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-binary-path 54ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-extglob 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-glob 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-interactive 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-natural-number 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-number 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-object 51ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-retry-allowed 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-plain-obj 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-stream 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-utf8 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-wsl 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-unicode-supported 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isarray 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isexe 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isurl 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jake 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jest-diff 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jasmine 52ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jasmine-core 56ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jest-get-type 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jest-matcher-utils 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jest-message-util 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jest-regex-util 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/joi 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/js-tokens 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/header-case 722ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jsonfile 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lazy-ass 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ky 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lazystream 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/load-json-file 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lighthouse-logger 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/locate-path 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.clonedeep 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.defaults 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.flatten 52ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.flattendeep 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.isobject 48ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.isplainobject 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.merge 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.pickby 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.union 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.zip 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/log-symbols 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/loglevel 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/loose-envify 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/loglevel-plugin-prefix 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lower-case 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/make-dir 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lru-cache 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/map-obj 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/map-stream 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/marky 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/merge-stream 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/micromatch 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mime-types 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mime-db 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mimic-fn 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/minimalistic-assert 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/minimatch 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/minimist 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/minipass 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/minizlib 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/yallist 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mkdirp-classic 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mute-stream 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/nan 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/needle 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/nice-try 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/no-case 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/node-fetch 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/node-pre-gyp 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/rimraf 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/nopt 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/normalize-package-data 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/normalize-path 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npm-bundled 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npm-normalize-package-bin 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npm-conf 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npm-packlist 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npm-run-path 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/npmlog 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/number-is-nan 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/object-assign 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/once 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/onetime 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ora 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/os-filter-obj 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/os-homedir 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/os-tmpdir 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.difference 725ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-event 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/osenv 50ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-finally 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-is-promise 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-iteration 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-locate 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-timeout 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-try 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-limit 72ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/param-case 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/parse-json 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/parse-ms 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-case 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-exists 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-is-absolute 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pascal-case 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-parse 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-key 41ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/path-type 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pause-stream 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/picomatch 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pinkie 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pinkie-promise 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pkg-dir 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/prepend-http 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pretty-format 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pretty-ms 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/printj 50ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/process-nextick-args 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/proxy-from-env 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/proto-list 66ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ps-tree 53ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pend 190ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pump 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/pseudomap 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/query-string 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/query-selector-shadow-dom 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/rc 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/quick-lru 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/react 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/read-pkg 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/react-is 53ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/react-dom 77ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/read-pkg-up 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/readdir-glob 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/readdirp 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/recursive-readdir 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/require-directory 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/resolve 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/resq 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/resolve-alpn 63ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/run-async 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/restore-cursor 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/safe-buffer 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/safer-buffer 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/saucelabs 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/sax 49ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/scheduler 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/semver 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/seek-bzip 80ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/semver-regex 53ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/semver-truncate 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/sentence-case 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/serialize-error 45ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/set-blocking 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/shebang-command 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/shebang-regex 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/signal-exit 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/simple-concat 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/simple-get 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/slash 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/snake-case 30ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/sort-keys-length 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/spdx-correct 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/spdx-exceptions 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/spdx-expression-parse 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/spdx-license-ids 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/split 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/stack-utils 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/start-server-and-test 31ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/stream-combiner 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strict-uri-encode 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/string_decoder 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-bom 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-dirs 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-eof 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-final-newline 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-json-comments 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/strip-outer 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/suffix 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tar 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/text-table 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/timed-out 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/through 50ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tmp 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/to-regex-range 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/to-buffer 52ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/trim-repeated 29ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tunnel 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tunnel-agent 28ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ua-parser-js 40ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/universalify 38ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/upper-case 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/type-fest 740ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/url-to-options 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/upper-case-first 47ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/url-parse-lax 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/util-deprecate 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/validate-npm-package-license 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/uuid 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wcwidth 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/stream-buffers 740ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wdio-docker-service 732ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wait-on 748ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wide-align 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wrap-ansi 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wdio-image-comparison-service 756ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wrappy 35ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/y18n 27ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/xtend 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/yargs 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/yargs-parser 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/yarn-install 54ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/webdriver-image-comparison 753ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/yauzl 32ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/zip-stream 38ms (cache miss)
+npm timing idealTree:inflate Completed in 8622ms
+npm timing idealTree:userRequests Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/cypress 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/http-server 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/common-tags 55ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cachedir 57ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@cypress%2fxvfb 91ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/@cypress%2flistr-verbose-renderer 93ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ecstatic 91ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/http-proxy 169ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/colors 174ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/url 178ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-installed-globally 182ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-ci 184ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/listr 183ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/opener 178ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/union 179ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/portfinder 181ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/corser 185ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/request 189ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/request-progress 190ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/moment 192ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/getos 195ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/optimist 188ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ramda 194ms (cache miss)
+npm timing idealTree:#root Completed in 295ms
+npm http fetch GET 200 https://registry.npmjs.org/global-dirs 90ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ci-info 93ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-path-inside 92ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/lodash.once 99ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/concat-stream 99ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/cli-truncate 114ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-promise 116ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/stream-to-observable 115ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/listr-silent-renderer 119ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/log-update 119ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aws-sign2 119ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/listr-verbose-renderer 123ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/listr-update-renderer 125ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/p-map 205ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/aws4 210ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/caseless 217ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/date-fns 233ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/http-signature 263ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/forever-agent 267ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-typedarray 267ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/extend 273ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 270ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/performance-now 270ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/throttleit 269ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isstream 273ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tough-cookie 273ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/qs 274ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/punycode 274ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/node-eta 277ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/querystring 277ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/har-validator 283ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/oauth-sign 283ms (cache miss)
+npm timing idealTree:node_modules/cypress Completed in 356ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer Completed in 7ms
+npm timing idealTree:node_modules/@cypress/xvfb Completed in 2ms
+npm timing idealTree:node_modules/cachedir Completed in 0ms
+npm timing idealTree:node_modules/common-tags Completed in 0ms
+npm timing idealTree:node_modules/date-fns Completed in 0ms
+npm timing idealTree:node_modules/getos Completed in 2ms
+npm http fetch GET 200 https://registry.npmjs.org/eventemitter3 60ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/url-join 61ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/he 64ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/wordwrap 63ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/requires-port 65ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/mime 68ms (cache miss)
+npm timing idealTree:node_modules/http-server Completed in 79ms
+npm timing idealTree:node_modules/colors Completed in 0ms
+npm timing idealTree:node_modules/corser Completed in 0ms
+npm timing idealTree:node_modules/ecstatic Completed in 4ms
+npm timing idealTree:node_modules/he Completed in 0ms
+npm timing idealTree:node_modules/http-proxy Completed in 2ms
+npm timing idealTree:node_modules/eventemitter3 Completed in 0ms
+npm timing idealTree:node_modules/is-ci Completed in 1ms
+npm timing idealTree:node_modules/ci-info Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/path-is-inside 43ms (cache miss)
+npm timing idealTree:node_modules/is-installed-globally Completed in 47ms
+npm timing idealTree:node_modules/global-dirs Completed in 0ms
+npm timing idealTree:node_modules/is-path-inside Completed in 1ms
+npm http fetch GET 200 https://registry.npmjs.org/slice-ansi 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/repeating 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/symbol-observable 42ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/elegant-spinner 46ms (cache miss)
+npm timing idealTree:node_modules/listr Completed in 63ms
+npm timing idealTree:node_modules/cli-truncate Completed in 3ms
+npm timing idealTree:node_modules/is-promise Completed in 0ms
+npm timing idealTree:node_modules/listr-silent-renderer Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer Completed in 5ms
+npm timing idealTree:node_modules/elegant-spinner Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer Completed in 2ms
+npm timing idealTree:node_modules/lodash.once Completed in 0ms
+npm timing idealTree:node_modules/log-update Completed in 1ms
+npm timing idealTree:node_modules/mime Completed in 0ms
+npm timing idealTree:node_modules/moment Completed in 0ms
+npm timing idealTree:node_modules/opener Completed in 0ms
+npm timing idealTree:node_modules/optimist Completed in 2ms
+npm timing idealTree:node_modules/p-map Completed in 0ms
+npm timing idealTree:node_modules/path-is-inside Completed in 0ms
+npm timing idealTree:node_modules/portfinder Completed in 4ms
+npm timing idealTree:node_modules/ramda Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/har-schema 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/sshpk 43ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/psl 44ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/assert-plus 46ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jsprim 62ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ajv 64ms (cache miss)
+npm timing idealTree:node_modules/request Completed in 79ms
+npm timing idealTree:node_modules/aws-sign2 Completed in 0ms
+npm timing idealTree:node_modules/aws4 Completed in 0ms
+npm timing idealTree:node_modules/caseless Completed in 0ms
+npm timing idealTree:node_modules/extend Completed in 0ms
+npm timing idealTree:node_modules/forever-agent Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/uri-js 33ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 36ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 46ms (cache miss)
+npm timing idealTree:node_modules/har-validator Completed in 51ms
+npm timing idealTree:node_modules/ajv Completed in 5ms
+npm timing idealTree:node_modules/fast-json-stable-stringify Completed in 0ms
+npm timing idealTree:node_modules/har-schema Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/getpass 37ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/ecc-jsbn 39ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/json-schema 81ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/verror 84ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/asn1 87ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/dashdash 88ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/tweetnacl 98ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/jsbn 105ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 107ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/extsprintf 118ms (cache miss)
+npm timing idealTree:node_modules/http-signature Completed in 125ms
+npm timing idealTree:node_modules/assert-plus Completed in 0ms
+npm timing idealTree:node_modules/is-typedarray Completed in 0ms
+npm timing idealTree:node_modules/isstream Completed in 0ms
+npm timing idealTree:node_modules/json-schema-traverse Completed in 0ms
+npm timing idealTree:node_modules/json-stringify-safe Completed in 0ms
+npm timing idealTree:node_modules/jsprim Completed in 6ms
+npm timing idealTree:node_modules/extsprintf Completed in 0ms
+npm timing idealTree:node_modules/json-schema Completed in 0ms
+npm timing idealTree:node_modules/oauth-sign Completed in 1ms
+npm timing idealTree:node_modules/performance-now Completed in 0ms
+npm timing idealTree:node_modules/qs Completed in 0ms
+npm timing idealTree:node_modules/request-progress Completed in 3ms
+npm timing idealTree:node_modules/node-eta Completed in 0ms
+npm timing idealTree:node_modules/requires-port Completed in 0ms
+npm timing idealTree:node_modules/slice-ansi Completed in 0ms
+npm timing idealTree:node_modules/sshpk Completed in 10ms
+npm timing idealTree:node_modules/asn1 Completed in 0ms
+npm timing idealTree:node_modules/bcrypt-pbkdf Completed in 0ms
+npm timing idealTree:node_modules/dashdash Completed in 0ms
+npm timing idealTree:node_modules/ecc-jsbn Completed in 0ms
+npm timing idealTree:node_modules/getpass Completed in 0ms
+npm timing idealTree:node_modules/jsbn Completed in 0ms
+npm timing idealTree:node_modules/stream-to-observable Completed in 0ms
+npm timing idealTree:node_modules/throttleit Completed in 0ms
+npm timing idealTree:node_modules/tough-cookie Completed in 2ms
+npm timing idealTree:node_modules/psl Completed in 0ms
+npm timing idealTree:node_modules/punycode Completed in 0ms
+npm timing idealTree:node_modules/tweetnacl Completed in 0ms
+npm timing idealTree:node_modules/union Completed in 1ms
+npm timing idealTree:node_modules/uri-js Completed in 1ms
+npm timing idealTree:node_modules/url Completed in 2ms
+npm timing idealTree:node_modules/querystring Completed in 0ms
+npm timing idealTree:node_modules/url-join Completed in 0ms
+npm timing idealTree:node_modules/verror Completed in 0ms
+npm timing idealTree:node_modules/wordwrap Completed in 0ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/chalk Completed in 2ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/exit-hook 38ms (cache miss)
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/cli-cursor Completed in 41ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/figures Completed in 0ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/restore-cursor Completed in 3ms
+npm timing idealTree:node_modules/exit-hook Completed in 0ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/onetime Completed in 0ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi Completed in 1ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex Completed in 0ms
+npm timing idealTree:node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color Completed in 0ms
+npm timing idealTree:node_modules/@cypress/xvfb/node_modules/debug Completed in 1ms
+npm timing idealTree:node_modules/@cypress/xvfb/node_modules/ms Completed in 0ms
+npm timing idealTree:node_modules/ajv/node_modules/fast-deep-equal Completed in 0ms
+npm timing idealTree:node_modules/cli-truncate/node_modules/string-width Completed in 1ms
+npm timing idealTree:node_modules/cli-truncate/node_modules/is-fullwidth-code-point Completed in 0ms
+npm timing idealTree:node_modules/cli-truncate/node_modules/strip-ansi Completed in 1ms
+npm timing idealTree:node_modules/cli-truncate/node_modules/ansi-regex Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/bluebird Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/chalk Completed in 1ms
+npm timing idealTree:node_modules/cypress/node_modules/ansi-styles Completed in 4ms
+npm timing idealTree:node_modules/cypress/node_modules/color-convert Completed in 1ms
+npm timing idealTree:node_modules/cypress/node_modules/color-name Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/commander Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/debug Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/execa Completed in 2ms
+npm timing idealTree:node_modules/cypress/node_modules/cross-spawn Completed in 1ms
+npm http fetch GET 200 https://registry.npmjs.org/buffer-from 34ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/typedarray 48ms (cache miss)
+npm timing idealTree:node_modules/cypress/node_modules/extract-zip Completed in 53ms
+npm timing idealTree:node_modules/concat-stream Completed in 3ms
+npm timing idealTree:node_modules/buffer-from Completed in 0ms
+npm timing idealTree:node_modules/typedarray Completed in 0ms
+npm timing idealTree:node_modules/concat-stream/node_modules/readable-stream Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/fs-extra Completed in 2ms
+npm timing idealTree:node_modules/cypress/node_modules/get-stream Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/glob Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/jsonfile Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/lodash Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/log-symbols Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/minimist Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/mkdirp Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/supports-color Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/has-flag Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/universalify Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/which Completed in 0ms
+npm timing idealTree:node_modules/getos/node_modules/async Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/chalk Completed in 5ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/ansi-styles Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/figures Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/log-symbols Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/strip-ansi Completed in 1ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/ansi-regex Completed in 0ms
+npm timing idealTree:node_modules/listr-update-renderer/node_modules/supports-color Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/chalk Completed in 2ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/ansi-styles Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/cli-cursor Completed in 2ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/figures Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/restore-cursor Completed in 1ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/onetime Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/strip-ansi Completed in 1ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/ansi-regex Completed in 0ms
+npm timing idealTree:node_modules/listr-verbose-renderer/node_modules/supports-color Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/chalk Completed in 1ms
+npm timing idealTree:node_modules/listr/node_modules/ansi-styles Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/figures Completed in 0ms
+npm http fetch GET 200 https://registry.npmjs.org/is-finite 35ms (cache miss)
+npm timing idealTree:node_modules/listr/node_modules/indent-string Completed in 38ms
+npm timing idealTree:node_modules/repeating Completed in 1ms
+npm timing idealTree:node_modules/is-finite Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/log-symbols Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/ora Completed in 2ms
+npm timing idealTree:node_modules/listr/node_modules/cli-cursor Completed in 1ms
+npm timing idealTree:node_modules/listr/node_modules/cli-spinners Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/restore-cursor Completed in 1ms
+npm timing idealTree:node_modules/listr/node_modules/onetime Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/rxjs Completed in 1ms
+npm timing idealTree:node_modules/symbol-observable Completed in 1ms
+npm timing idealTree:node_modules/listr/node_modules/strip-ansi Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/ansi-regex Completed in 0ms
+npm timing idealTree:node_modules/listr/node_modules/supports-color Completed in 0ms
+npm timing idealTree:node_modules/log-update/node_modules/ansi-escapes Completed in 0ms
+npm timing idealTree:node_modules/log-update/node_modules/cli-cursor Completed in 0ms
+npm timing idealTree:node_modules/log-update/node_modules/restore-cursor Completed in 1ms
+npm timing idealTree:node_modules/log-update/node_modules/onetime Completed in 0ms
+npm timing idealTree:node_modules/optimist/node_modules/minimist Completed in 0ms
+npm timing idealTree:node_modules/portfinder/node_modules/async Completed in 0ms
+npm timing idealTree:node_modules/portfinder/node_modules/debug Completed in 1ms
+npm timing idealTree:node_modules/portfinder/node_modules/mkdirp Completed in 1ms
+npm timing idealTree:node_modules/portfinder/node_modules/ms Completed in 0ms
+npm timing idealTree:node_modules/request/node_modules/form-data Completed in 0ms
+npm timing idealTree:node_modules/request/node_modules/uuid Completed in 0ms
+npm timing idealTree:node_modules/union/node_modules/qs Completed in 0ms
+npm timing idealTree:node_modules/uri-js/node_modules/punycode Completed in 0ms
+npm timing idealTree:node_modules/url/node_modules/punycode Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/extract-zip/node_modules/debug Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/extract-zip/node_modules/yauzl Completed in 1ms
+npm timing idealTree:node_modules/cypress/node_modules/fd-slicer Completed in 0ms
+npm timing idealTree:node_modules/cypress/node_modules/mkdirp/node_modules/minimist Completed in 0ms
+npm timing idealTree:buildDeps Completed in 1373ms
+npm timing idealTree:fixDepFlags Completed in 7ms
+npm timing idealTree Completed in 10423ms
+npm timing reify:loadTrees Completed in 10424ms
+npm timing reify:diffTrees Completed in 11ms
+npm timing reify:retireShallow Completed in 1ms
+npm timing reify:createSparse Completed in 39ms
+npm timing reify:loadBundles Completed in 0ms
+npm verb reify failed optional dependency /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/fsevents
+npm timing reifyNode:node_modules/fsevents Completed in 15ms
+npm http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1630ms
+npm timing auditReport:getReport Completed in 1638ms
+npm timing metavuln:packument:lodash Completed in 4ms
+npm timing metavuln:packument:qs Completed in 2ms
+npm timing metavuln:packument:minimist Completed in 2ms
+npm timing metavuln:packument:normalize-url Completed in 2ms
+npm timing metavuln:packument:ws Completed in 2ms
+npm timing metavuln:packument:tar Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:lodash:3j75gLVQLNQxx/EGsxgpuOZEb4+ucHeNht0L58Z3HfXaC6ZTu1/fbe/vkaA4IhRRlhtVY+RKRsBAdGrvGJ1flw== Completed in 74ms
+npm timing metavuln:load:security-advisory:lodash:1065 Completed in 7ms
+npm timing metavuln:cache:get:security-advisory:lodash:QfqeVpSKfkySSADJYMQTKymXBAczpJs/SekVCmE37hq8SBonO1nvomkBoqXEb2MLYW9M5P0TuZss2VLSdZFJUg== Completed in 80ms
+npm timing metavuln:load:security-advisory:lodash:1523 Completed in 5ms
+npm timing metavuln:cache:get:security-advisory:lodash:QECQhqENwQoNVl6da4JbJcLbJD29giB5sLJN+gaFqW+TzG4UNvuVAr/wBc9mvIFVshry+iHa5VIaBdTVItbLtg== Completed in 85ms
+npm timing metavuln:load:security-advisory:lodash:1673 Completed in 2ms
+npm timing metavuln:cache:get:security-advisory:qs:znie+NZ12vEJiDqVOAEUXL6Dz32AASaTfmTIZEMtWYNNa4yWC7H3zdyoprUMMpNzAxuX/3Z9Nybx0fU7swJNEw== Completed in 88ms
+npm timing metavuln:load:security-advisory:qs:1469 Completed in 2ms
+npm timing metavuln:cache:get:security-advisory:minimist:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 91ms
+npm timing metavuln:load:security-advisory:minimist:1179 Completed in 0ms
+npm timing metavuln:cache:get:security-advisory:normalize-url:S9ME4VdPkj6OjBryk/9N6QASXkMHx2MOhP5VxMYy9oeLgh1ISyXouUPxG7qVPQGQ/2nKU4I5BqOPAUzU/hd7GA== Completed in 91ms
+npm timing metavuln:load:security-advisory:normalize-url:1755 Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:ws:mZ0LjYE/cTruAioUztB9nHvPmdFGn1w4Cu3A9YRN+tXQkYfl6+UkKEkOhQmHznNtdecF/R2sCKpd/L3fuPazPg== Completed in 92ms
+npm timing metavuln:load:security-advisory:ws:1748 Completed in 2ms
+npm timing metavuln:cache:get:security-advisory:tar:cjHaXStZNOareCiNJCAJC3zkipnvNvUdG5uDNB72GZTrItdTAEf5JFhS9qj5Xg3vixqWUIRvY3vAd1VNBZwk8A== Completed in 95ms
+npm timing metavuln:load:security-advisory:tar:1771 Completed in 2ms
+npm timing metavuln:cache:get:security-advisory:tar:jImVOhtqQvIIm0U8Y97K85SpSegp3T6I5O6kr6f2Na1aB1pyDbKwa4bCV31y5qbBtrcfaTHLB+xzSJHArWQzSw== Completed in 98ms
+npm timing metavuln:load:security-advisory:tar:1770 Completed in 2ms
+npm http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 1965ms (cache miss)
+npm timing reifyNode:node_modules/buffer-from Completed in 2089ms
+npm http fetch GET 200 https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz 1964ms (cache miss)
+npm timing reifyNode:node_modules/concat-stream Completed in 2094ms
+npm timing metavuln:cache:put:security-advisory:qs:znie+NZ12vEJiDqVOAEUXL6Dz32AASaTfmTIZEMtWYNNa4yWC7H3zdyoprUMMpNzAxuX/3Z9Nybx0fU7swJNEw== Completed in 409ms
+npm timing metavuln:calculate:security-advisory:qs:1469 Completed in 499ms
+npm timing metavuln:cache:put:security-advisory:lodash:3j75gLVQLNQxx/EGsxgpuOZEb4+ucHeNht0L58Z3HfXaC6ZTu1/fbe/vkaA4IhRRlhtVY+RKRsBAdGrvGJ1flw== Completed in 420ms
+npm timing metavuln:calculate:security-advisory:lodash:1065 Completed in 502ms
+npm timing metavuln:cache:put:security-advisory:ws:mZ0LjYE/cTruAioUztB9nHvPmdFGn1w4Cu3A9YRN+tXQkYfl6+UkKEkOhQmHznNtdecF/R2sCKpd/L3fuPazPg== Completed in 404ms
+npm timing metavuln:calculate:security-advisory:ws:1748 Completed in 499ms
+npm timing metavuln:cache:put:security-advisory:minimist:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 409ms
+npm timing metavuln:calculate:security-advisory:minimist:1179 Completed in 500ms
+npm timing metavuln:cache:put:security-advisory:lodash:QfqeVpSKfkySSADJYMQTKymXBAczpJs/SekVCmE37hq8SBonO1nvomkBoqXEb2MLYW9M5P0TuZss2VLSdZFJUg== Completed in 416ms
+npm timing metavuln:calculate:security-advisory:lodash:1523 Completed in 501ms
+npm timing metavuln:cache:put:security-advisory:normalize-url:S9ME4VdPkj6OjBryk/9N6QASXkMHx2MOhP5VxMYy9oeLgh1ISyXouUPxG7qVPQGQ/2nKU4I5BqOPAUzU/hd7GA== Completed in 408ms
+npm timing metavuln:calculate:security-advisory:normalize-url:1755 Completed in 500ms
+npm timing metavuln:cache:put:security-advisory:tar:cjHaXStZNOareCiNJCAJC3zkipnvNvUdG5uDNB72GZTrItdTAEf5JFhS9qj5Xg3vixqWUIRvY3vAd1VNBZwk8A== Completed in 402ms
+npm timing metavuln:calculate:security-advisory:tar:1771 Completed in 501ms
+npm timing metavuln:cache:put:security-advisory:tar:jImVOhtqQvIIm0U8Y97K85SpSegp3T6I5O6kr6f2Na1aB1pyDbKwa4bCV31y5qbBtrcfaTHLB+xzSJHArWQzSw== Completed in 400ms
+npm timing metavuln:calculate:security-advisory:tar:1770 Completed in 500ms
+npm http fetch GET 200 https://registry.npmjs.org/asn1/-/asn1-0.2.4.tgz 1991ms (cache miss)
+npm timing reifyNode:node_modules/asn1 Completed in 2197ms
+npm timing metavuln:cache:put:security-advisory:lodash:QECQhqENwQoNVl6da4JbJcLbJD29giB5sLJN+gaFqW+TzG4UNvuVAr/wBc9mvIFVshry+iHa5VIaBdTVItbLtg== Completed in 678ms
+npm timing metavuln:calculate:security-advisory:lodash:1673 Completed in 766ms
+npm timing metavuln:packument:cypress Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:cypress:yTvuaGec0TPbhj8U3FWlI65fYrrIzEI2ymGAaMncjglu40xRO5L1WXM2LUza2sRxSkw9b/SDWL0zZyMgTva1DQ== Completed in 21ms
+npm timing metavuln:load:security-advisory:cypress:3j75gLVQLNQxx/EGsxgpuOZEb4+ucHeNht0L58Z3HfXaC6ZTu1/fbe/vkaA4IhRRlhtVY+RKRsBAdGrvGJ1flw== Completed in 11ms
+npm http fetch GET 200 https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz 2253ms (cache miss)
+npm timing reifyNode:node_modules/getpass Completed in 2432ms
+npm http fetch GET 200 https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz 2253ms (cache miss)
+npm timing reifyNode:node_modules/ecc-jsbn Completed in 2436ms
+npm http fetch GET 200 https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz 2115ms (cache miss)
+npm timing reifyNode:node_modules/json-schema-traverse Completed in 2437ms
+npm http fetch GET 200 https://registry.npmjs.org/repeating/-/repeating-2.0.1.tgz 2379ms (cache miss)
+npm timing reifyNode:node_modules/repeating Completed in 2500ms
+npm http fetch GET 200 https://registry.npmjs.org/is-finite/-/is-finite-1.1.0.tgz 2361ms (cache miss)
+npm timing reifyNode:node_modules/is-finite Completed in 2504ms
+npm http fetch GET 200 https://registry.npmjs.org/throttleit/-/throttleit-0.0.2.tgz 2311ms (cache miss)
+npm timing reifyNode:node_modules/throttleit Completed in 2506ms
+npm http fetch GET 200 https://registry.npmjs.org/node-eta/-/node-eta-0.1.1.tgz 2289ms (cache miss)
+npm timing reifyNode:node_modules/node-eta Completed in 2509ms
+npm http fetch GET 200 https://registry.npmjs.org/assert-plus/-/assert-plus-1.0.0.tgz 2203ms (cache miss)
+npm timing reifyNode:node_modules/assert-plus Completed in 2512ms
+npm http fetch GET 200 https://registry.npmjs.org/exit-hook/-/exit-hook-1.1.1.tgz 2458ms (cache miss)
+npm timing reifyNode:node_modules/exit-hook Completed in 2584ms
+npm http fetch GET 200 https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz 2461ms (cache miss)
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm timing reifyNode:node_modules/querystring Completed in 2589ms
+npm http fetch GET 200 https://registry.npmjs.org/har-validator/-/har-validator-5.1.5.tgz 2193ms (cache miss)
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm timing reifyNode:node_modules/har-validator Completed in 2589ms
+npm http fetch GET 200 https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz 2271ms (cache miss)
+npm timing reifyNode:node_modules/aws4 Completed in 2683ms
+npm http fetch GET 200 https://registry.npmjs.org/p-map/-/p-map-1.2.0.tgz 2273ms (cache miss)
+npm timing reifyNode:node_modules/p-map Completed in 2697ms
+npm http fetch GET 200 https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz 2437ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-typedarray/-/is-typedarray-1.0.0.tgz 2445ms (cache miss)
+npm timing reifyNode:node_modules/is-typedarray Completed in 2831ms
+npm http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz 2736ms (cache miss)
+npm timing reifyNode:node_modules/bcrypt-pbkdf Completed in 2923ms
+npm http fetch GET 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 2543ms (cache miss)
+npm timing reifyNode:node_modules/json-stringify-safe Completed in 2925ms
+npm http fetch GET 200 https://registry.npmjs.org/listr-update-renderer/-/listr-update-renderer-0.2.0.tgz 2504ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer Completed in 2938ms
+npm http fetch GET 200 https://registry.npmjs.org/log-update/-/log-update-1.0.2.tgz 2520ms (cache miss)
+npm timing reifyNode:node_modules/log-update Completed in 2948ms
+npm http fetch GET 200 https://registry.npmjs.org/is-promise/-/is-promise-2.2.2.tgz 2431ms (cache miss)
+npm timing reifyNode:node_modules/is-promise Completed in 2969ms
+npm http fetch GET 200 https://registry.npmjs.org/mime/-/mime-1.6.0.tgz 2393ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/elegant-spinner/-/elegant-spinner-1.0.1.tgz 2581ms (cache miss)
+npm timing reifyNode:node_modules/elegant-spinner Completed in 2995ms
+npm http fetch GET 200 https://registry.npmjs.org/path-is-inside/-/path-is-inside-1.0.2.tgz 2483ms (cache miss)
+npm timing reifyNode:node_modules/path-is-inside Completed in 2992ms
+npm http fetch GET 200 https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz 2428ms (cache miss)
+npm timing reifyNode:node_modules/requires-port Completed in 2997ms
+npm http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz 2894ms (cache miss)
+npm timing reifyNode:node_modules/punycode Completed in 3027ms
+npm http fetch GET 200 https://registry.npmjs.org/oauth-sign/-/oauth-sign-0.9.0.tgz 2687ms (cache miss)
+npm timing reifyNode:node_modules/oauth-sign Completed in 3027ms
+npm timing reifyNode:node_modules/mime Completed in 3019ms
+npm http fetch GET 200 https://registry.npmjs.org/jsprim/-/jsprim-1.4.1.tgz 2763ms (cache miss)
+npm timing reifyNode:node_modules/jsprim Completed in 3079ms
+npm http fetch GET 200 https://registry.npmjs.org/verror/-/verror-1.10.0.tgz 2848ms (cache miss)
+npm timing reifyNode:node_modules/verror Completed in 3086ms
+npm timing reifyNode:node_modules/performance-now Completed in 3084ms
+npm http fetch GET 200 https://registry.npmjs.org/is-path-inside/-/is-path-inside-1.0.1.tgz 2524ms (cache miss)
+npm timing reifyNode:node_modules/is-path-inside Completed in 3081ms
+npm http fetch GET 200 https://registry.npmjs.org/slice-ansi/-/slice-ansi-0.0.4.tgz 2675ms (cache miss)
+npm timing reifyNode:node_modules/slice-ansi Completed in 3091ms
+npm http fetch GET 200 https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz 3004ms (cache miss)
+npm timing reifyNode:node_modules/typedarray Completed in 3121ms
+npm http fetch GET 200 https://registry.npmjs.org/listr-silent-renderer/-/listr-silent-renderer-1.1.1.tgz 2616ms (cache miss)
+npm timing reifyNode:node_modules/listr-silent-renderer Completed in 3111ms
+npm http fetch GET 200 https://registry.npmjs.org/is-ci/-/is-ci-1.2.1.tgz 2426ms (cache miss)
+npm timing reifyNode:node_modules/is-ci Completed in 3109ms
+npm http fetch GET 200 https://registry.npmjs.org/cachedir/-/cachedir-1.3.0.tgz 2417ms (cache miss)
+npm timing reifyNode:node_modules/cachedir Completed in 3113ms
+npm http fetch GET 200 https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.0.1.tgz 3072ms (cache miss)
+npm timing reifyNode:node_modules/symbol-observable Completed in 3187ms
+npm http fetch GET 200 https://registry.npmjs.org/listr-verbose-renderer/-/listr-verbose-renderer-0.4.1.tgz 2718ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer Completed in 3200ms
+npm http fetch GET 200 https://registry.npmjs.org/http-server/-/http-server-0.11.1.tgz 2430ms (cache miss)
+npm timing reifyNode:node_modules/http-server Completed in 3203ms
+npm http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz 2413ms (cache miss)
+npm timing reifyNode:node_modules/uri-js/node_modules/punycode Completed in 3239ms
+npm http fetch GET 200 https://registry.npmjs.org/@cypress/xvfb/-/xvfb-1.2.4.tgz 2500ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/xvfb Completed in 3232ms
+npm http fetch GET 200 https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz 3169ms (cache miss)
+npm timing reifyNode:node_modules/jsbn Completed in 3317ms
+npm http fetch GET 200 https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz 2918ms (cache miss)
+npm timing reifyNode:node_modules/forever-agent Completed in 3317ms
+npm http fetch GET 200 https://registry.npmjs.org/url-join/-/url-join-2.0.5.tgz 2786ms (cache miss)
+npm timing reifyNode:node_modules/url-join Completed in 3368ms
+npm http fetch GET 200 https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz 3113ms (cache miss)
+npm timing reifyNode:node_modules/extsprintf Completed in 3393ms
+npm http fetch GET 200 https://registry.npmjs.org/opener/-/opener-1.4.3.tgz 2793ms (cache miss)
+npm timing reifyNode:node_modules/opener Completed in 3385ms
+npm http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-1.0.1.tgz 2525ms (cache miss)
+npm timing reifyNode:node_modules/log-update/node_modules/restore-cursor Completed in 3399ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-1.0.2.tgz 2527ms (cache miss)
+npm timing reifyNode:node_modules/log-update/node_modules/cli-cursor Completed in 3403ms
+npm http fetch GET 200 https://registry.npmjs.org/@cypress/listr-verbose-renderer/-/listr-verbose-renderer-0.4.1.tgz 2678ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer Completed in 3390ms
+npm http fetch GET 200 https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 2581ms (cache miss)
+npm timing reifyNode:node_modules/ajv/node_modules/fast-deep-equal Completed in 3414ms
+npm http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz 2584ms (cache miss)
+npm timing reifyNode:node_modules/log-update/node_modules/onetime Completed in 3415ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz 2508ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/ansi-styles Completed in 3415ms
+npm http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz 2508ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/supports-color Completed in 3419ms
+npm http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 2449ms (cache miss)
+npm timing reifyNode:node_modules/portfinder/node_modules/ms Completed in 3419ms
+npm http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz 2406ms (cache miss)
+npm timing reifyNode:node_modules/portfinder/node_modules/mkdirp Completed in 3421ms
+npm http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 2345ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz 3098ms (cache miss)
+npm timing reifyNode:node_modules/isstream Completed in 3477ms
+npm http fetch GET 200 https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz 3073ms (cache miss)
+npm timing reifyNode:node_modules/aws-sign2 Completed in 3481ms
+npm http fetch GET 200 https://registry.npmjs.org/global-dirs/-/global-dirs-0.1.1.tgz 2910ms (cache miss)
+npm timing reifyNode:node_modules/global-dirs Completed in 3477ms
+npm http fetch GET 200 https://registry.npmjs.org/stream-to-observable/-/stream-to-observable-0.1.0.tgz 3076ms (cache miss)
+npm timing reifyNode:node_modules/stream-to-observable Completed in 3496ms
+npm http fetch GET 200 https://registry.npmjs.org/extend/-/extend-3.0.2.tgz 3110ms (cache miss)
+npm timing reifyNode:node_modules/extend Completed in 3502ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-truncate/-/cli-truncate-0.2.1.tgz 2974ms (cache miss)
+npm timing reifyNode:node_modules/cli-truncate Completed in 3500ms
+npm http fetch GET 200 https://registry.npmjs.org/corser/-/corser-2.0.1.tgz 2897ms (cache miss)
+npm timing reifyNode:node_modules/corser Completed in 3500ms
+npm http fetch GET 200 https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz 2831ms (cache miss)
+npm timing reifyNode:node_modules/lodash.once Completed in 3506ms
+npm http fetch GET 200 https://registry.npmjs.org/is-installed-globally/-/is-installed-globally-0.1.0.tgz 2829ms (cache miss)
+npm timing reifyNode:node_modules/is-installed-globally Completed in 3506ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-1.0.2.tgz 2621ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/cli-cursor Completed in 3524ms
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 2605ms (cache miss)
+npm timing reifyNode:node_modules/cli-truncate/node_modules/strip-ansi Completed in 3535ms
+npm http fetch GET 200 https://registry.npmjs.org/figures/-/figures-1.7.0.tgz 2679ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/figures Completed in 3577ms
+npm http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz 2693ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/chalk Completed in 3593ms
+npm http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-1.0.1.tgz 2690ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/restore-cursor Completed in 3614ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 2702ms (cache miss)
+npm timing reifyNode:node_modules/cli-truncate/node_modules/ansi-regex Completed in 3630ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-1.0.2.tgz 2543ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/cli-cursor Completed in 3644ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz 2582ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/ansi-styles Completed in 3689ms
+npm http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-1.0.1.tgz 2601ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/restore-cursor Completed in 3694ms
+npm http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz 2598ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/onetime Completed in 3697ms
+npm http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz 2594ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/supports-color Completed in 3704ms
+npm http fetch GET 200 https://registry.npmjs.org/indent-string/-/indent-string-2.1.0.tgz 2546ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/indent-string Completed in 3707ms
+npm http fetch GET 200 https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz 3374ms (cache miss)
+npm timing reifyNode:node_modules/caseless Completed in 3775ms
+npm http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz 2889ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/supports-color Completed in 3777ms
+npm http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz 2897ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/onetime Completed in 3781ms
+npm http fetch GET 200 https://registry.npmjs.org/log-symbols/-/log-symbols-1.0.2.tgz 2812ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/log-symbols Completed in 3782ms
+npm http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz 2848ms (cache miss)
+npm timing reifyNode:node_modules/cli-truncate/node_modules/string-width Completed in 3784ms
+npm http fetch GET 200 https://registry.npmjs.org/qs/-/qs-2.3.3.tgz 2805ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz 2859ms (cache miss)
+npm timing reifyNode:node_modules/cli-truncate/node_modules/is-fullwidth-code-point Completed in 3792ms
+npm http fetch GET 200 https://registry.npmjs.org/ora/-/ora-0.2.3.tgz 2633ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/ora Completed in 3791ms
+npm http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 2620ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/xvfb/node_modules/ms Completed in 3793ms
+npm http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz 2610ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/onetime Completed in 3796ms
+npm http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-1.0.1.tgz 2617ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/restore-cursor Completed in 3800ms
+npm http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz 2616ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color Completed in 3805ms
+npm http fetch GET 200 https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz 3643ms (cache miss)
+npm timing reifyNode:node_modules/dashdash Completed in 3835ms
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 2916ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/strip-ansi Completed in 3830ms
+npm http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz 2909ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/chalk Completed in 3833ms
+npm http fetch GET 200 https://registry.npmjs.org/figures/-/figures-1.7.0.tgz 2921ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/figures Completed in 3836ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 2772ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/ansi-regex Completed in 3861ms
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 2753ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/strip-ansi Completed in 3866ms
+npm http fetch GET 200 https://registry.npmjs.org/figures/-/figures-1.7.0.tgz 2704ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/figures Completed in 3872ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 2694ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex Completed in 3874ms
+npm http fetch GET 200 https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz 2588ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/universalify Completed in 3877ms
+npm http fetch GET 200 https://registry.npmjs.org/which/-/which-1.3.1.tgz 2558ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/which Completed in 3887ms
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 2716ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi Completed in 3907ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz 2733ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles Completed in 3928ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-1.0.2.tgz 2760ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/cli-cursor Completed in 3956ms
+npm http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz 2642ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/cross-spawn Completed in 3973ms
+npm http fetch GET 200 https://registry.npmjs.org/figures/-/figures-1.7.0.tgz 2791ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/figures Completed in 3992ms
+npm timing metavuln:cache:put:security-advisory:cypress:yTvuaGec0TPbhj8U3FWlI65fYrrIzEI2ymGAaMncjglu40xRO5L1WXM2LUza2sRxSkw9b/SDWL0zZyMgTva1DQ== Completed in 1601ms
+npm timing metavuln:calculate:security-advisory:cypress:3j75gLVQLNQxx/EGsxgpuOZEb4+ucHeNht0L58Z3HfXaC6ZTu1/fbe/vkaA4IhRRlhtVY+RKRsBAdGrvGJ1flw== Completed in 1633ms
+npm timing metavuln:packument:union Completed in 5ms
+npm http fetch GET 200 https://registry.npmjs.org/http-signature/-/http-signature-1.2.0.tgz 3664ms (cache miss)
+npm timing reifyNode:node_modules/http-signature Completed in 4054ms
+npm http fetch GET 200 https://registry.npmjs.org/ci-info/-/ci-info-1.6.0.tgz 3491ms (cache miss)
+npm timing reifyNode:node_modules/ci-info Completed in 4067ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 3206ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/ansi-regex Completed in 4085ms
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 3198ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/strip-ansi Completed in 4090ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 3188ms (cache miss)
+npm timing reifyNode:node_modules/listr-update-renderer/node_modules/ansi-regex Completed in 4094ms
+npm http fetch GET 200 https://registry.npmjs.org/log-symbols/-/log-symbols-1.0.2.tgz 2924ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/log-symbols Completed in 4089ms
+npm timing metavuln:cache:get:security-advisory:union:3D3iKBAfx9jD+vd7mMsVz2gnc9XH4oe7cUJaWsg0NoTmI4JSOSUo8D3xMtm7/fdF+AM7L2bO+tkYh9zmSwYlJA== Completed in 84ms
+npm timing metavuln:load:security-advisory:union:znie+NZ12vEJiDqVOAEUXL6Dz32AASaTfmTIZEMtWYNNa4yWC7H3zdyoprUMMpNzAxuX/3Z9Nybx0fU7swJNEw== Completed in 8ms
+npm http fetch GET 200 https://registry.npmjs.org/he/-/he-1.2.0.tgz 3525ms (cache miss)
+npm timing reifyNode:node_modules/he Completed in 4112ms
+npm http fetch GET 200 https://registry.npmjs.org/portfinder/-/portfinder-1.0.28.tgz 3243ms (cache miss)
+npm timing reifyNode:node_modules/portfinder Completed in 4119ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz 3279ms (cache miss)
+npm timing reifyNode:node_modules/listr-verbose-renderer/node_modules/ansi-styles Completed in 4173ms
+npm http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz 2802ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/color-name Completed in 4162ms
+npm http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz 2808ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/color-convert Completed in 4167ms
+npm http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz 3871ms (cache miss)
+npm timing reifyNode:node_modules/fast-json-stable-stringify Completed in 4195ms
+npm http fetch GET 200 https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz 3793ms (cache miss)
+npm timing reifyNode:node_modules/wordwrap Completed in 4196ms
+npm http fetch GET 200 https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.4.3.tgz 3867ms (cache miss)
+npm timing reifyNode:node_modules/tough-cookie Completed in 4203ms
+npm http fetch GET 200 https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz 3612ms (cache miss)
+npm timing reifyNode:node_modules/eventemitter3 Completed in 4196ms
+npm http fetch GET 200 https://registry.npmjs.org/request-progress/-/request-progress-0.4.0.tgz 3531ms (cache miss)
+npm timing reifyNode:node_modules/request-progress Completed in 4197ms
+npm http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-1.3.2.tgz 3140ms (cache miss)
+npm timing reifyNode:node_modules/url/node_modules/punycode Completed in 4203ms
+npm http fetch GET 200 https://registry.npmjs.org/cli-spinners/-/cli-spinners-0.1.2.tgz 3101ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/cli-spinners Completed in 4207ms
+npm http fetch GET 200 https://registry.npmjs.org/jsonfile/-/jsonfile-3.0.1.tgz 2934ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/jsonfile Completed in 4206ms
+npm http fetch GET 200 https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.0.1.tgz 3000ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/fd-slicer Completed in 4210ms
+npm http fetch GET 200 https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz 2839ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/log-symbols Completed in 4213ms
+npm http fetch GET 200 https://registry.npmjs.org/execa/-/execa-0.10.0.tgz 2828ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/execa Completed in 4216ms
+npm http fetch GET 200 https://registry.npmjs.org/extract-zip/-/extract-zip-1.6.7.tgz 2841ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/extract-zip Completed in 4222ms
+npm http fetch GET 200 https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz 2919ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/get-stream Completed in 4273ms
+npm timing reifyNode:node_modules/union/node_modules/qs Completed in 4302ms
+npm http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz 2942ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/supports-color Completed in 4307ms
+npm http fetch GET 200 https://registry.npmjs.org/listr/-/listr-0.12.0.tgz 3673ms (cache miss)
+npm timing reifyNode:node_modules/listr Completed in 4341ms
+npm http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz 3202ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/chalk Completed in 4372ms
+npm http fetch GET 200 https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz 3125ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/has-flag Completed in 4386ms
+npm http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz 2990ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/chalk Completed in 4387ms
+npm http fetch GET 200 https://registry.npmjs.org/yauzl/-/yauzl-2.4.1.tgz 3008ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/extract-zip/node_modules/yauzl Completed in 4392ms
+npm http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz 3025ms (cache miss)
+npm http fetch GET 200 https://registry.npmjs.org/har-schema/-/har-schema-2.0.0.tgz 4101ms (cache miss)
+npm timing reifyNode:node_modules/har-schema Completed in 4429ms
+npm http fetch GET 200 https://registry.npmjs.org/getos/-/getos-3.1.0.tgz 3779ms (cache miss)
+npm timing reifyNode:node_modules/getos Completed in 4459ms
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm timing reifyNode:node_modules/request/node_modules/uuid Completed in 4470ms
+npm http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz 3241ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/listr-verbose-renderer/node_modules/chalk Completed in 4469ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-1.4.0.tgz 3071ms (cache miss)
+npm timing reifyNode:node_modules/log-update/node_modules/ansi-escapes Completed in 4494ms
+npm http fetch GET 200 https://registry.npmjs.org/url/-/url-0.11.0.tgz 3881ms (cache miss)
+npm timing reifyNode:node_modules/url Completed in 4494ms
+npm http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz 3411ms (cache miss)
+npm timing reifyNode:node_modules/request/node_modules/form-data Completed in 4498ms
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.1.tgz 3133ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/ansi-styles Completed in 4497ms
+npm http fetch GET 200 https://registry.npmjs.org/debug/-/debug-3.2.7.tgz 3514ms (cache miss)
+npm timing reifyNode:node_modules/portfinder/node_modules/debug Completed in 4514ms
+npm http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.1.3.tgz 3144ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/glob Completed in 4521ms
+npm http fetch GET 200 https://registry.npmjs.org/debug/-/debug-3.2.7.tgz 3381ms (cache miss)
+npm timing reifyNode:node_modules/@cypress/xvfb/node_modules/debug Completed in 4558ms
+npm timing reifyNode:node_modules/cypress/node_modules/minimist Completed in 4555ms
+npm http fetch GET 200 https://registry.npmjs.org/qs/-/qs-6.5.2.tgz 4250ms (cache miss)
+npm timing reifyNode:node_modules/qs Completed in 4583ms
+npm http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz 3252ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/mkdirp/node_modules/minimist Completed in 4566ms
+npm http fetch GET 200 https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz 4460ms (cache miss)
+npm timing reifyNode:node_modules/tweetnacl Completed in 4596ms
+npm http fetch GET 200 https://registry.npmjs.org/request/-/request-2.88.0.tgz 3969ms (cache miss)
+npm WARN deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm timing reifyNode:node_modules/request Completed in 4582ms
+npm http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz 3557ms (cache miss)
+npm timing reifyNode:node_modules/optimist/node_modules/minimist Completed in 4589ms
+npm http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.15.1.tgz 3192ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/commander Completed in 4586ms
+npm timing metavuln:cache:put:security-advisory:union:3D3iKBAfx9jD+vd7mMsVz2gnc9XH4oe7cUJaWsg0NoTmI4JSOSUo8D3xMtm7/fdF+AM7L2bO+tkYh9zmSwYlJA== Completed in 494ms
+npm timing metavuln:calculate:security-advisory:union:znie+NZ12vEJiDqVOAEUXL6Dz32AASaTfmTIZEMtWYNNa4yWC7H3zdyoprUMMpNzAxuX/3Z9Nybx0fU7swJNEw== Completed in 588ms
+npm timing metavuln:packument:optimist Completed in 1ms
+npm timing metavuln:packument:mkdirp Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:cypress:+AyJaakbKhxlvimoejdDN5n4Ogwe52tnWn7it634X+gp1sV98ZFIcN5BfI/Ra2PGzYgpLgjqzPM3TpMmYQCH4g== Completed in 4ms
+npm timing metavuln:load:security-advisory:cypress:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 5ms
+npm timing metavuln:cache:get:security-advisory:optimist:daQNz384Dm6JY+9b/z8rRm0tA4YkOiJ2YTSJUtVwd4yO3esHkiRhdFNiOLBC1mppjnz+VhaMaSp82b8X+qQyDw== Completed in 8ms
+npm timing metavuln:load:security-advisory:optimist:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:mkdirp:dOqvv9Jcyhu8PueSJZB+eZ0G/JI7mVomMmOBSku5SA7OScjvKmHq9jcLVFKmH1wsW2LcZATEOArlMxt/fa5LmA== Completed in 10ms
+npm timing metavuln:load:security-advisory:mkdirp:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 1ms
+npm http fetch GET 200 https://registry.npmjs.org/psl/-/psl-1.8.0.tgz 4509ms (cache miss)
+npm timing reifyNode:node_modules/psl Completed in 4643ms
+npm http fetch GET 200 https://registry.npmjs.org/http-proxy/-/http-proxy-1.18.1.tgz 4070ms (cache miss)
+npm timing reifyNode:node_modules/http-proxy Completed in 4663ms
+npm http fetch GET 200 https://registry.npmjs.org/debug/-/debug-3.1.0.tgz 3301ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/debug Completed in 4686ms
+npm http fetch GET 200 https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz 4138ms (cache miss)
+npm timing reifyNode:node_modules/optimist Completed in 4728ms
+npm http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 3361ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/extract-zip/node_modules/debug Completed in 4753ms
+npm http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz 3988ms (cache miss)
+npm timing reifyNode:node_modules/concat-stream/node_modules/readable-stream Completed in 4798ms
+npm http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz 3477ms (cache miss)
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm timing reifyNode:node_modules/cypress/node_modules/mkdirp Completed in 4779ms
+npm http fetch GET 200 https://registry.npmjs.org/json-schema/-/json-schema-0.2.3.tgz 4565ms (cache miss)
+npm timing reifyNode:node_modules/json-schema Completed in 4815ms
+npm http fetch GET 200 https://registry.npmjs.org/ecstatic/-/ecstatic-3.3.2.tgz 4210ms (cache miss)
+npm WARN deprecated ecstatic@3.3.2: This package is unmaintained and deprecated. See the GH Issue 259.
+npm timing reifyNode:node_modules/ecstatic Completed in 4807ms
+npm timing metavuln:cache:put:security-advisory:optimist:daQNz384Dm6JY+9b/z8rRm0tA4YkOiJ2YTSJUtVwd4yO3esHkiRhdFNiOLBC1mppjnz+VhaMaSp82b8X+qQyDw== Completed in 252ms
+npm timing metavuln:calculate:security-advisory:optimist:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 261ms
+npm timing metavuln:cache:put:security-advisory:mkdirp:dOqvv9Jcyhu8PueSJZB+eZ0G/JI7mVomMmOBSku5SA7OScjvKmHq9jcLVFKmH1wsW2LcZATEOArlMxt/fa5LmA== Completed in 250ms
+npm timing metavuln:calculate:security-advisory:mkdirp:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 262ms
+npm timing metavuln:cache:put:security-advisory:cypress:+AyJaakbKhxlvimoejdDN5n4Ogwe52tnWn7it634X+gp1sV98ZFIcN5BfI/Ra2PGzYgpLgjqzPM3TpMmYQCH4g== Completed in 254ms
+npm timing metavuln:calculate:security-advisory:cypress:8MDgP3O3yM8t8dcQHSMUtmH4UKJrKhWmsmV44L4YChIzoahEo+G6j24b+4BPItZck5h5zQFPFD39kOC/789lfA== Completed in 263ms
+npm timing metavuln:packument:cacheable-request Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:cacheable-request:NZw8fDWhunN1sCmhDi5TdF5nmf7/nynUGP60Re9qywveHD6zuwn74hPJgWE8MEd6a+KAcOgnjY7800Ljg80glQ== Completed in 3ms
+npm timing metavuln:load:security-advisory:cacheable-request:S9ME4VdPkj6OjBryk/9N6QASXkMHx2MOhP5VxMYy9oeLgh1ISyXouUPxG7qVPQGQ/2nKU4I5BqOPAUzU/hd7GA== Completed in 1ms
+npm http fetch GET 200 https://registry.npmjs.org/colors/-/colors-1.0.3.tgz 4268ms (cache miss)
+npm timing reifyNode:node_modules/colors Completed in 4873ms
+npm http fetch GET 200 https://registry.npmjs.org/union/-/union-0.4.6.tgz 4298ms (cache miss)
+npm timing reifyNode:node_modules/union Completed in 4900ms
+npm http fetch GET 200 https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz 4605ms (cache miss)
+npm timing metavuln:cache:put:security-advisory:cacheable-request:NZw8fDWhunN1sCmhDi5TdF5nmf7/nynUGP60Re9qywveHD6zuwn74hPJgWE8MEd6a+KAcOgnjY7800Ljg80glQ== Completed in 40ms
+npm timing metavuln:calculate:security-advisory:cacheable-request:S9ME4VdPkj6OjBryk/9N6QASXkMHx2MOhP5VxMYy9oeLgh1ISyXouUPxG7qVPQGQ/2nKU4I5BqOPAUzU/hd7GA== Completed in 46ms
+npm timing metavuln:packument:puppeteer-core Completed in 0ms
+npm timing metavuln:cache:get:security-advisory:puppeteer-core:f3R+RbuK0FaHFgzaSDs4OXEH3r/vQ5v1pH8zD7iLR7AljRk6UbdPK7r91Rpr2aOTbml+iRHMEM9Hjw9lTwzlpg== Completed in 1ms
+npm timing metavuln:load:security-advisory:puppeteer-core:mZ0LjYE/cTruAioUztB9nHvPmdFGn1w4Cu3A9YRN+tXQkYfl6+UkKEkOhQmHznNtdecF/R2sCKpd/L3fuPazPg== Completed in 3ms
+npm timing reifyNode:node_modules/uri-js Completed in 4930ms
+npm http fetch GET 200 https://registry.npmjs.org/sshpk/-/sshpk-1.16.1.tgz 4642ms (cache miss)
+npm timing reifyNode:node_modules/sshpk Completed in 4933ms
+npm timing metavuln:cache:put:security-advisory:puppeteer-core:f3R+RbuK0FaHFgzaSDs4OXEH3r/vQ5v1pH8zD7iLR7AljRk6UbdPK7r91Rpr2aOTbml+iRHMEM9Hjw9lTwzlpg== Completed in 63ms
+npm timing metavuln:calculate:security-advisory:puppeteer-core:mZ0LjYE/cTruAioUztB9nHvPmdFGn1w4Cu3A9YRN+tXQkYfl6+UkKEkOhQmHznNtdecF/R2sCKpd/L3fuPazPg== Completed in 67ms
+npm timing metavuln:packument:node-pre-gyp Completed in 1ms
+npm timing metavuln:cache:get:security-advisory:node-pre-gyp:ugyB/q7LZrPi7T1Z3Ofm98SND5dnkb/sMyXN9Ptzmyl61RKaGZfrSx0ybdpxZ/VYOd9wqwhU/hl9J4mDntgocg== Completed in 2ms
+npm timing metavuln:load:security-advisory:node-pre-gyp:cjHaXStZNOareCiNJCAJC3zkipnvNvUdG5uDNB72GZTrItdTAEf5JFhS9qj5Xg3vixqWUIRvY3vAd1VNBZwk8A== Completed in 8ms
+npm http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.1.tgz 3617ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/fs-extra Completed in 4995ms
+npm timing metavuln:cache:put:security-advisory:node-pre-gyp:ugyB/q7LZrPi7T1Z3Ofm98SND5dnkb/sMyXN9Ptzmyl61RKaGZfrSx0ybdpxZ/VYOd9wqwhU/hl9J4mDntgocg== Completed in 31ms
+npm timing metavuln:calculate:security-advisory:node-pre-gyp:cjHaXStZNOareCiNJCAJC3zkipnvNvUdG5uDNB72GZTrItdTAEf5JFhS9qj5Xg3vixqWUIRvY3vAd1VNBZwk8A== Completed in 42ms
+npm timing metavuln:packument:http-server Completed in 0ms
+npm timing metavuln:cache:get:security-advisory:http-server:PNYJ7IjWgo5IYaOTGOJ074J0m7zAL1A1auoTUNZcjSGc642Ywuhoy9F+lm8ehJVF/1lP7qtFpXQRU/m8kAFkFg== Completed in 37ms
+npm timing metavuln:load:security-advisory:http-server:3D3iKBAfx9jD+vd7mMsVz2gnc9XH4oe7cUJaWsg0NoTmI4JSOSUo8D3xMtm7/fdF+AM7L2bO+tkYh9zmSwYlJA== Completed in 2ms
+npm http fetch GET 200 https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz 3666ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/bluebird Completed in 5065ms
+npm timing metavuln:cache:put:security-advisory:http-server:PNYJ7IjWgo5IYaOTGOJ074J0m7zAL1A1auoTUNZcjSGc642Ywuhoy9F+lm8ehJVF/1lP7qtFpXQRU/m8kAFkFg== Completed in 22ms
+npm timing metavuln:calculate:security-advisory:http-server:3D3iKBAfx9jD+vd7mMsVz2gnc9XH4oe7cUJaWsg0NoTmI4JSOSUo8D3xMtm7/fdF+AM7L2bO+tkYh9zmSwYlJA== Completed in 62ms
+npm timing metavuln:cache:get:security-advisory:http-server:6JDOLhpnolIhxx4+VmkQkrNHzqZfj+y7ED/HDtVO5zxgLUVy/cGyClsY+KjhP6Vqq/f0tI+goQzdYoxCHiWz9A== Completed in 1ms
+npm timing metavuln:load:security-advisory:http-server:daQNz384Dm6JY+9b/z8rRm0tA4YkOiJ2YTSJUtVwd4yO3esHkiRhdFNiOLBC1mppjnz+VhaMaSp82b8X+qQyDw== Completed in 3ms
+npm timing metavuln:cache:put:security-advisory:http-server:6JDOLhpnolIhxx4+VmkQkrNHzqZfj+y7ED/HDtVO5zxgLUVy/cGyClsY+KjhP6Vqq/f0tI+goQzdYoxCHiWz9A== Completed in 20ms
+npm timing metavuln:calculate:security-advisory:http-server:daQNz384Dm6JY+9b/z8rRm0tA4YkOiJ2YTSJUtVwd4yO3esHkiRhdFNiOLBC1mppjnz+VhaMaSp82b8X+qQyDw== Completed in 25ms
+npm timing metavuln:packument:extract-zip Completed in 0ms
+npm timing metavuln:cache:get:security-advisory:extract-zip:Ez4J5zW7kyrkJ081MIKiVtrrFhm2Srz5lwvOCFYV3hhK9qo+CxOQa1l/4z9y9wyNEgc2OeUt286k+eLIbmuO5A== Completed in 2ms
+npm timing metavuln:load:security-advisory:extract-zip:dOqvv9Jcyhu8PueSJZB+eZ0G/JI7mVomMmOBSku5SA7OScjvKmHq9jcLVFKmH1wsW2LcZATEOArlMxt/fa5LmA== Completed in 2ms
+npm http fetch GET 200 https://registry.npmjs.org/async/-/async-2.4.0.tgz 3991ms (cache miss)
+npm timing reifyNode:node_modules/getos/node_modules/async Completed in 5163ms
+npm timing metavuln:cache:put:security-advisory:extract-zip:Ez4J5zW7kyrkJ081MIKiVtrrFhm2Srz5lwvOCFYV3hhK9qo+CxOQa1l/4z9y9wyNEgc2OeUt286k+eLIbmuO5A== Completed in 75ms
+npm timing metavuln:calculate:security-advisory:extract-zip:dOqvv9Jcyhu8PueSJZB+eZ0G/JI7mVomMmOBSku5SA7OScjvKmHq9jcLVFKmH1wsW2LcZATEOArlMxt/fa5LmA== Completed in 80ms
+npm timing metavuln:cache:get:security-advisory:cypress:o3PLpiOzLq6WNInJ6UvlWoPzDdha/+aKQY0QU2rIxGZjFRHB/dZ2Olb5CXcdyUaYbLBF6iYzZdLsMPDC9LE8aw== Completed in 2ms
+npm timing metavuln:load:security-advisory:cypress:Ez4J5zW7kyrkJ081MIKiVtrrFhm2Srz5lwvOCFYV3hhK9qo+CxOQa1l/4z9y9wyNEgc2OeUt286k+eLIbmuO5A== Completed in 5ms
+npm http fetch GET 200 https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz 4903ms (cache miss)
+npm timing reifyNode:node_modules/ajv Completed in 5234ms
+npm timing metavuln:cache:put:security-advisory:cypress:o3PLpiOzLq6WNInJ6UvlWoPzDdha/+aKQY0QU2rIxGZjFRHB/dZ2Olb5CXcdyUaYbLBF6iYzZdLsMPDC9LE8aw== Completed in 23ms
+npm timing metavuln:calculate:security-advisory:cypress:Ez4J5zW7kyrkJ081MIKiVtrrFhm2Srz5lwvOCFYV3hhK9qo+CxOQa1l/4z9y9wyNEgc2OeUt286k+eLIbmuO5A== Completed in 30ms
+npm timing auditReport:init Completed in 3612ms
+npm timing reify:audit Completed in 5253ms
+npm http fetch GET 200 https://registry.npmjs.org/async/-/async-2.6.3.tgz 4246ms (cache miss)
+npm timing reifyNode:node_modules/portfinder/node_modules/async Completed in 5287ms
+npm http fetch GET 200 https://registry.npmjs.org/common-tags/-/common-tags-1.8.0.tgz 4644ms (cache miss)
+npm timing reifyNode:node_modules/common-tags Completed in 5330ms
+npm http fetch GET 200 https://registry.npmjs.org/ramda/-/ramda-0.24.1.tgz 4931ms (cache miss)
+npm timing reifyNode:node_modules/ramda Completed in 5597ms
+npm http fetch GET 200 https://registry.npmjs.org/moment/-/moment-2.24.0.tgz 5223ms (cache miss)
+npm timing reifyNode:node_modules/moment Completed in 5901ms
+npm http fetch GET 200 https://registry.npmjs.org/cypress/-/cypress-3.2.0.tgz 5466ms (cache miss)
+npm timing reifyNode:node_modules/cypress Completed in 6220ms
+npm http fetch GET 200 https://registry.npmjs.org/date-fns/-/date-fns-1.30.1.tgz 5809ms (cache miss)
+npm timing reifyNode:node_modules/date-fns Completed in 6418ms
+npm http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz 5049ms (cache miss)
+npm timing reifyNode:node_modules/cypress/node_modules/lodash Completed in 6418ms
+npm http fetch GET 200 https://registry.npmjs.org/rxjs/-/rxjs-5.5.12.tgz 6109ms (cache miss)
+npm timing reifyNode:node_modules/listr/node_modules/rxjs Completed in 7226ms
+npm timing reify:unpack Completed in 7249ms
+npm timing reify:unretire Completed in 0ms
+npm timing build:queue Completed in 33ms
+npm timing build:link:node_modules/cypress Completed in 4ms
+npm timing build:link:node_modules/ecstatic Completed in 5ms
+npm timing build:link:node_modules/he Completed in 5ms
+npm timing build:link:node_modules/is-ci Completed in 5ms
+npm timing build:link:node_modules/http-server Completed in 5ms
+npm timing build:link:node_modules/mime Completed in 5ms
+npm timing build:link:node_modules/opener Completed in 5ms
+npm timing build:link:node_modules/sshpk Completed in 4ms
+npm timing build:link:node_modules/cypress/node_modules/extract-zip Completed in 4ms
+npm timing build:link:node_modules/request/node_modules/uuid Completed in 4ms
+npm timing build:link:node_modules/portfinder/node_modules/mkdirp Completed in 5ms
+npm timing build:link:node_modules/cypress/node_modules/which Completed in 5ms
+npm timing build:link:node_modules/cypress/node_modules/mkdirp Completed in 5ms
+npm timing build:link Completed in 6ms
+npm info run cypress@3.2.0 postinstall node_modules/cypress node index.js --exec install
+npm info run cypress@3.2.0 postinstall { code: 0, signal: null }
+npm timing build:run:postinstall:node_modules/cypress Completed in 44646ms
+npm timing build:run:postinstall Completed in 44647ms
+npm timing build:deps Completed in 44687ms
+npm timing build Completed in 44688ms
+npm timing reify:build Completed in 44689ms
+npm timing reify:trash Completed in 2ms
+npm timing reify:save Completed in 121ms
+npm timing reify Completed in 62596ms
+added 177 packages, and audited 828 packages in 1m
+46 packages are looking for funding
+  run `npm fund` for details
+npm timing command:install Completed in 62619ms
+npm verb exit 0
+npm timing npm Completed in 62799ms
+npm info ok 
+12 vulnerabilities (4 low, 1 moderate, 7 high)
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues, run:
+  npm audit fix --force
+Run `npm audit` for details.
+$ npm run fix
+> sauce@1.0.0 fix
+> npx wdio run wdio.chrome.js --spec ERROR.js
+2021-08-30T10:11:47.884Z DEBUG @wdio/sync: Couldn't load fibers package for Node v12 and above
+Execution of 1 workers started at 2021-08-30T10:11:47.891Z
+2021-08-30T10:11:47.892Z DEBUG @wdio/utils:initialiseServices: initialise service "sauce" as NPM package
+2021-08-30T10:11:47.977Z DEBUG @wdio/sync: Couldn't load fibers package for Node v12 and above
+2021-08-30T10:11:47.980Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+2021-08-30T10:11:48.009Z ERROR @wdio/utils:initialiseServices: Error: Couldn't initialise "wdio-image-comparison-service".
+Error: /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/canvas/build/Release/canvas.node: invalid ELF header
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:94:18)
+    at Object.<anonymous> (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Object.safeRequire (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/node_modules/@wdio/utils/build/utils.js:187:15)
+    at Object.initialisePlugin [as default] (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/node_modules/@wdio/utils/build/initialisePlugin.js:37:28)
+    at initialiseServices (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/node_modules/@wdio/utils/build/initialiseServices.js:59:51)
+    at Object.initialiseLauncherService (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/node_modules/@wdio/utils/build/initialiseServices.js:86:26)
+    at Launcher.run (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/build/launcher.js:73:73)
+    at launch (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/build/commands/run.js:126:21)
+    at Object.handler (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/cli/build/commands/run.js:164:16)
+    at /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/yargs/build/index.cjs:1:8973
+    at j (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/yargs/build/index.cjs:1:4852)
+    at _.applyMiddlewareAndGetResult (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/yargs/build/index.cjs:1:8942)
+2021-08-30T10:11:48.035Z INFO @wdio/cli:launcher: Run onPrepare hook
+2021-08-30T10:11:48.036Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-08-30T10:11:48.037Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.chrome.js,--spec,ERROR.js
+[0-0] 2021-08-30T10:11:48.086Z DEBUG @wdio/sync: Couldn't load fibers package for Node v12 and above
+[0-0] 2021-08-30T10:11:48.545Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2021-08-30T10:11:48.546Z DEBUG @wdio/config:ConfigParser: No compiler found, continue without compiling files
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/1_Login.js
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/2_Search.js
+2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/3_AddToCart.js
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/4_AddToWishlist.js
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/5_AddToQuote.js
+[0-0] 2021-08-30T10:11:48.563Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/6_Configurator.js
+[0-0] 2021-08-30T10:11:48.561Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/7_AppBased.js
+[0-0] 2021-08-30T10:11:48.565Z DEBUG @wdio/utils:initialiseServices: initialise service "sauce" as NPM package
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/8_Checkout.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/9_CheckSites.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/ERROR.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/UICheck.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/1_Login_Phone.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/2_Search_Phone.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/3_AddToCart_Phone.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/4_AddToWishlist_Phone.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/5_AddToQuote_Phone.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/6_Configurator_Phone.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/8_Checkout_Phone.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Phone/UICheck_Phone.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/1_Login_Tablet.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/2_Search_Tablet.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/3_AddToCart_Tablet.js
+2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/4_AddToWishlist_Tablet.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/5_AddToQuote_Tablet.js
+[0-0] 2021-08-30T10:11:48.562Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/6_Configurator_Tablet.js
+2021-08-30T10:11:48.563Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/8_Checkout_Tablet.js
+2021-08-30T10:11:48.563Z WARN @wdio/config:ConfigParser: Unexpected entry in specs that is neither string nor array:  /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/Tablet/UICheck_Tablet.js
+[0-0] 2021-08-30T10:11:48.602Z DEBUG @wdio/sync: Couldn't load fibers package for Node v12 and above
+[0-0] 2021-08-30T10:11:48.607Z DEBUG @wdio/utils:initialiseServices: initialise service "image-comparison" as NPM package
+[0-0] 2021-08-30T10:11:48.631Z ERROR @wdio/utils:initialiseServices: Error: Couldn't initialise "wdio-image-comparison-service".
+Error: /builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/canvas/build/Release/canvas.node: invalid ELF header
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1183:18)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:94:18)
+    at Object.<anonymous> (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Object.safeRequire (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/utils/build/utils.js:183:15)
+    at Object.initialisePlugin [as default] (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/utils/build/initialisePlugin.js:37:28)
+    at initialiseServices (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/utils/build/initialiseServices.js:59:51)
+    at Object.initialiseWorkerService (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/utils/build/initialiseServices.js:140:26)
+    at Runner.run (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/node_modules/@wdio/runner/build/index.js:75:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[0-0] RUNNING in chrome - /test/PC/ERROR.js
+[0-0] 2021-08-30T10:11:48.675Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2021-08-30T10:11:48.675Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2021-08-30T10:11:48.676Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session
+[0-0] 2021-08-30T10:11:48.676Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      browserVersion: 'latest',
+      platformName: 'Windows 10',
+      acceptInsecureCerts: true,
+      'sauce:options': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': { build: 'fabian' }
+  }
+}
+[0-0] DEPRECATION: An asynchronous before/it/after function took a done callback but also returned a promise. This is not supported and will stop working in the future. Either remove the done callback (recommended) or change the function to not return a promise.
+[0-0] 2021-08-30T10:11:57.332Z INFO webdriver: COMMAND navigateTo("https://www.sick.com/de/en")
+[0-0] 2021-08-30T10:11:57.333Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/a95fa65448194e30b217e9c375f30a41/url
+[0-0] 2021-08-30T10:11:57.333Z INFO webdriver: DATA { url: 'https://www.sick.com/de/en' }
+[0-0] 2021-08-30T10:12:05.014Z INFO webdriver: COMMAND findElement("css selector", "[id="gdpr_modal_button_consent"]")
+[0-0] 2021-08-30T10:12:05.015Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/a95fa65448194e30b217e9c375f30a41/element
+[0-0] 2021-08-30T10:12:05.015Z INFO webdriver: DATA { using: 'css selector', value: '[id="gdpr_modal_button_consent"]' }
+[0-0] 2021-08-30T10:12:05.276Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '38f53199-d633-46af-9369-94ec83cd82d3'
+}
+[0-0] a95fa65448194e30b217e9c375f30a41
+[0-0] {
+  'goog:chromeOptions': { debuggerAddress: 'localhost:59024' },
+  browserVersion: '92.0.4515.107',
+  timeouts: { pageLoad: 300000, implicit: 0, script: 30000 },
+  strictFileInteractability: false,
+  acceptInsecureCerts: true,
+  'webauthn:virtualAuthenticators': true,
+  networkConnectionEnabled: false,
+  chrome: {
+    chromedriverVersion: '92.0.4515.43 (8c61b7e2989f2990d42f859cac71319137787cce-refs/branch-heads/4515@{#306})',
+    userDataDir: 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\scoped_dir3628_1845447228'
+  },
+  browserName: 'chrome',
+  setWindowRect: true,
+  proxy: {},
+  pageLoadStrategy: 'normal',
+  'webauthn:extension:largeBlob': true,
+  platformName: 'windows',
+  unhandledPromptBehavior: 'dismiss and notify',
+  'webauthn:extension:credBlob': true
+}
+[0-0] {
+  protocol: 'https',
+  hostname: 'ondemand.us-west-1.saucelabs.com',
+  port: 443,
+  path: '/wd/hub',
+  user: 'schmifa1',
+  key: 'c70e9b1c-eb25-4b65-881a-4264c4283305',
+  capabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': { build: 'fabian' }
+  },
+  logLevel: 'debug',
+  connectionRetryTimeout: 60000,
+  connectionRetryCount: 3,
+  logLevels: {},
+  transformRequest: [Function: default],
+  transformResponse: [Function: default],
+  strictSSL: true,
+  requestedCapabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 10',
+    acceptInsecureCerts: true,
+    'sauce:options': { build: 'fabian' }
+  },
+  specs: [
+    '/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/ERROR.js'
+  ],
+  exclude: [],
+  suites: {},
+  baseUrl: 'http://localhost',
+  bail: 0,
+  waitforInterval: 500,
+  waitforTimeout: 10000,
+  framework: 'jasmine',
+  reporters: [ 'spec' ],
+  services: [ [ 'sauce' ], [ 'image-comparison', [Object] ] ],
+  execArgv: [],
+  maxInstances: 2,
+  maxInstancesPerCapability: 100,
+  filesToWatch: [],
+  onPrepare: [],
+  onWorkerStart: [],
+  before: [],
+  beforeSession: [],
+  beforeSuite: [],
+  beforeHook: [],
+  beforeTest: [],
+  beforeCommand: [],
+  afterCommand: [],
+  afterTest: [],
+  afterHook: [],
+  afterSuite: [],
+  afterSession: [],
+  after: [],
+  onComplete: [],
+  onReload: [],
+  automationProtocol: 'webdriver'
+}
+[0-0] 2021-08-30T10:12:05.284Z INFO webdriver: COMMAND elementClick("38f53199-d633-46af-9369-94ec83cd82d3")
+[0-0] 2021-08-30T10:12:05.284Z INFO webdriver: [POST] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/a95fa65448194e30b217e9c375f30a41/element/38f53199-d633-46af-9369-94ec83cd82d3/click
+[0-0] Error in "Fix error checkScreen"
+TypeError: browser.saveScreen is not a function
+    at UserContext.<anonymous> (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/ERROR.js:13:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[0-0] 2021-08-30T10:12:05.814Z INFO webdriver: COMMAND deleteSession()
+[0-0] DEPRECATION: An asynchronous before/it/after function took a done callback but also returned a promise. This is not supported and will stop working in the future. Either remove the done callback (recommended) or change the function to not return a promise.
+[0-0] 2021-08-30T10:12:05.814Z INFO webdriver: [DELETE] https://ondemand.us-west-1.saucelabs.com/wd/hub/session/a95fa65448194e30b217e9c375f30a41
+[0-0] 2021-08-30T10:12:06.164Z INFO webdriver: RESULT 
+2021-08-30T10:12:06.272Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in chrome - /test/PC/ERROR.js
+2021-08-30T10:12:06.272Z INFO @wdio/cli:launcher: Run onComplete hook
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 92.0.4515.107 windows #0-0] Running: chrome (v92.0.4515.107) on windows
+[chrome 92.0.4515.107 windows #0-0] Session ID: a95fa65448194e30b217e9c375f30a41
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] » /test/PC/ERROR.js
+[chrome 92.0.4515.107 windows #0-0] Fix error
+[chrome 92.0.4515.107 windows #0-0]    ✖ checkScreen
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] 1 failing (8.8s)
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] 1) Fix error checkScreen
+[chrome 92.0.4515.107 windows #0-0] TypeError: browser.saveScreen is not a function
+[chrome 92.0.4515.107 windows #0-0] TypeError: browser.saveScreen is not a function
+[chrome 92.0.4515.107 windows #0-0]     at UserContext.<anonymous> (/builds/cd-it/ba-e/projects/web-experience/infrastructure/playground/wdio_tests/test/PC/ERROR.js:13:23)
+[chrome 92.0.4515.107 windows #0-0]     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[chrome 92.0.4515.107 windows #0-0]
+[chrome 92.0.4515.107 windows #0-0] Check out job at https://app.saucelabs.com/tests/a95fa65448194e30b217e9c375f30a41?auth=c13d37362b77ec7ef84489217383f2fc
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:00:18 
+2021-08-30T10:12:06.273Z INFO @wdio/local-runner: Shutting down spawned worker
+2021-08-30T10:12:06.524Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2021-08-30T10:12:06.524Z INFO @wdio/local-runner: shutting down
+Cleaning up file based variables
+00:00
+ERROR: Job failed: command terminated with exit code 1
